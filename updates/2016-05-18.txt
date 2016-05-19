@@ -1,0 +1,38 @@
+Goals for last week
+    > None (aka "this is just the beginning")
+
+Goals for the coming week
+    > Install JabRef on my personal machine (Done)
+    > Clone the team’s article repository to my personal machine
+    > Setup JabRef to work with team’s article repository
+    > Regain access to my UVA online account (Done)
+    > Get set up in my Campus Office (Done)
+    > Set up my PTL Private Repository (Done)
+    > Write my first weekly update to my Repository (Done)
+
+Issues/Questions
+    > Should I plan on making a presentation this summer?
+        > Yes, a brief survey of reviewed research articles
+    
+    > Where will my office/desk be?
+        > Room 228. I have a key! I won't have a keycard or parking pass until fall.
+        
+    > Should I reach out to other students/Faculty to learn about research?
+        > Prof Gerber (http://www.sys.virginia.edu/matthew-gerber.html)
+            > Student Mohammad Al Boni (http://www.sys.virginia.edu/graduate/current-students/438-new-graduate-student-profile.html?uvaid=ma2sm)
+                > ???
+            > Student Kiana Jafari Meimandi (http://www.sys.virginia.edu/graduate/current-students/438-new-graduate-student-profile.html?uvaid=kj6vd)
+                > ???
+            > Student Alex Pape (http://www.sys.virginia.edu/graduate/current-students/438-new-graduate-student-profile.html?uvaid=aep2bb)
+                > Religious beliefs in ancient bhuddism that led to radicalization
+            > Student Lihua Cai (http://www.sys.virginia.edu/graduate/current-students/438-new-graduate-student-profile.html?uvaid=lc3cp)
+                > Cyber Interruption and Human Cyber Interaction
+        > Prof Patek (http://www.sys.virginia.edu/stephen-d-patek.html)
+            > Student Matthew Engelhard (http://www.sys.virginia.edu/graduate/current-students/438-new-graduate-student-profile.html?uvaid=mme9n)
+                > Delivery of insulin to diabetics
+        >Prof Beling (http://www.sys.virginia.edu/peter-a-beling.html)
+            > Automatically eliciting user intent/objectives
+    
+    > How many times can I park on campus before I get a parking violation?
+        > Professor Gerber laughs
+        > Still going as of 5/19/2016
