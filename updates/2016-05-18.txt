@@ -2,17 +2,18 @@ Goals for last week
     > None (aka "this is just the beginning")
 
 Goals for the coming week
-    > Install JabRef on my personal machine (Done)
     > Clone the team’s article repository to my personal machine
     > Setup JabRef to work with team’s article repository
-    > Regain access to my UVA online account (Done)
+    > Connect to campus Wifi
+    > Install JabRef on my personal machine (Done)    
+    > Regain access to my UVA online account (Done)    
     > Get set up in my Campus Office (Done)
     > Set up my PTL Private Repository (Done)
     > Write my first weekly update to my Repository (Done)
 
 Issues/Questions
     > Should I plan on making a presentation this summer?
-        > Yes, a brief survey of reviewed research articles
+        > Yes, a brief survey of reviewed research articles by the end of the summer
     
     > Where will my office/desk be?
         > Room 228. I have a key! I won't have a keycard or parking pass until fall.
@@ -34,5 +35,4 @@ Issues/Questions
             > Automatically eliciting user intent/objectives
     
     > How many times can I park on campus before I get a parking violation?
-        > Professor Gerber laughs
-        > Still going as of 5/19/2016
+        > Experiment ongoing as of 5/19/2016
