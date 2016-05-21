@@ -1,3 +1,13 @@
+Types of learning 
+    > Supervised (p1)
+    > Unsupervised (p1)
+
+Types of output    
+    > Continuous (aka Quantitative?) (p2) why can't discrete outcomes be Quantitative? Also, often referred to  as a regression problem? What does Regression mean?
+    > Discrete (note the doesn't use the term discrete, I did) (aka qualitative/categorical) (p2-3)
+
+There are learning classes of for which there are no "Outputs"? (p4). But isn't the "output" in this case whatever pattern or insight we glean from our research?
+
 n = |observations|
 p = |variables|
 
