@@ -2,3 +2,12 @@ n = |observations|
 p = |variables|
 
 X(n,p)
+
+scalar = a 
+vector = (aka tuple) 1xn matrix
+matrix = 
+
+Commutative = changing the order of operands doesn't change the result (e.g. a+b = b+a)
+Associative = changing the order of a sequence doesn't change the result (e.g. [a+b]+c = a+[b+c])
+
+"A central problem in all statistical learning situations involves choosing the best method for a given application." (p12)
