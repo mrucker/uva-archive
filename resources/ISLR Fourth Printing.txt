@@ -1,0 +1,4 @@
+n = |observations|
+p = |variables|
+
+X(n,p)

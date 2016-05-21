@@ -9,6 +9,7 @@ Goals for the coming week
     > Get set up in my Campus Office (Done 5/18)
     > Set up my PTL Private Repository (Done 5/19)
     > Write my first weekly update to my Repository (Done 5/19)
+    > Create Linux instance on AWS with R installed (Done 5/21)
     > Connect to campus Wifi
     > Begin reading Introduction to Statistical Learning
 
