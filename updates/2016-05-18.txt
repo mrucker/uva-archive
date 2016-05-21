@@ -2,14 +2,15 @@ Goals for last week
     > None (aka "this is just the beginning")
 
 Goals for the coming week
-    > Clone the team’s article repository to my personal machine
+    > Install JabRef on my personal machine (Done 5/18)
+    > Clone the team’s article repository to my personal machine (Done 5/19)
     > Setup JabRef to work with team’s article repository
+    > Regain access to my UVA online account (Done 5/18)
+    > Get set up in my Campus Office (Done 5/18)
+    > Set up my PTL Private Repository (Done 5/19)
+    > Write my first weekly update to my Repository (Done 5/19)
     > Connect to campus Wifi
-    > Install JabRef on my personal machine (Done)    
-    > Regain access to my UVA online account (Done)    
-    > Get set up in my Campus Office (Done)
-    > Set up my PTL Private Repository (Done)
-    > Write my first weekly update to my Repository (Done)
+    > Begin reading Introduction to Statistical Learning
 
 Issues/Questions
     > Should I plan on making a presentation this summer?
