@@ -32,10 +32,40 @@ Reasons for calculating f(X)
     > Prediction: to easily or cheaply determine Y given X without having to make real life observations (e.g. how fast will my plan fall out of the sky if I remove its wings?)
     > Inference: to understand how the various variables, X, impact Y (e.g. x1 might decrease Y while x2 increases it Y = f(x1, x2) = x2 - x1). (p17-19)
     
-fundamental relationships types between Y and X, i.e., f in Y = f(X)
+Fundamental relationships types between Y and X, i.e., f in Y = f(X)
     > Linear
     > non-linear
 
-fundamentals methods for determining f(X)
+Fundamentals methods for determining f(X)
     > Parameteric: pick a pattern or model and then simply figure which values to assign the paramaters of that model to optimize it. (The least squares is an example of the parametric method. First, we pick the model "linear". Then, we adjust the parameters to minimize the squared distances.) (p21-22) 
-    > Non-Parametric: 
+    > Non-Parametric: These need a lot more observations than Parametric approaches because they don't assume a given form.
+    
+When creating "synthetic observations" the Y = f(x) + e formula is used. First a "synthetic" f(x) is created to generate values. Then for every generated observations a random value, e, is added. By one definition then the test of a learning algorithm is to determine f(x)... In theory, if e is truly random there shouldn't be any possible f(x) that can accurately capture it.
+
+What if there is no f(x) to discover? Or what if it only accounts for .00001% of the relationship? Can we assume there is *always* a relationship between two variables since we lived in a closed universe?
+
+"In general, as the flexibility of a method increases, its interpretability decreases." (p25) by "interpret" I think they mean to explain what is going on over many observations in a simple sentence (e.g. when x increases y increases)
+
+The more "flexible" a learning algorithm the higher the risk of overfitting (p25)
+
+Supervised Learning - there is an output that can validate as correct or not. The validation would be the "supervising" step. Such validation may not be done, but the algorithm is still considered "supervised" as long as it is possible to validate.
+Unsupervised Learning - there isn't an output and so it isn't possible to validate the result against known observations. Or perhaps the output can't be reduced to a single quantifiable variable. The output might be astronomically large and require exponential time to check (this can also be called semi-supervised).
+
+Quantitative problems tend to be referred to as regression problems (p26)
+Qualitative problems tend to be referred to as classification problems (p26)
+
+Regressions, of any kind, always output continuous values. Continuous values can be used to answer Qualitative problems (e.g. age, quantitative, can be used to determine if a person is a legal adult, qualitiatve)
+
+MSE = Mean Squared Error (p29) (used primarily for quantitative outputs)
+
+MSE can never be lower than e because no change to f(x) will ever account for e. (p34)
+approximate MSE = variance + bias + e, where variance is how much our model changes with different test data and bias is how far off from the actual relationship our model is
+
+linear models often have low variance but high bias
+flexible models often have high variance and low bias
+
+"In a real-life situation in which f is unobserved, it is generally not possible to explicitly compute the test MSE, bias, or variance for a statistical learning method. Nevertheless, one should always keep the bias-variance trade-off in mind." (p36)
+
+Test Error Rate - Avg(I(ym0 != yt0)). Because I is either 1 or 0 the average will give us the percentage that were incorrect.
+
+I() stands for an "Indicator Variable" which basically means a qualitative variable (in the above example the output of I() is either 1 or 0)
