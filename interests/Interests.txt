@@ -1,0 +1,29 @@
+##Terminology##
+    - Ubiquitous Computing
+    - Context Awareness
+    - Context Modeling
+    - Attention Interruption
+    - Activity Classification
+    - Predective Analytics for Social Processes
+
+##Fields##
+    - Intelligent Agent Technology (https://en.wikipedia.org/wiki/Intelligent_agent)
+    - Social Simulation (https://en.wikipedia.org/wiki/Social_simulation)
+    - Reinforcement Learning (https://en.wikipedia.org/wiki/Reinforcement_learning)
+    - Supervised Learning (https://en.wikipedia.org/wiki/Supervised_learning)
+    - Intelligent Tutoring System (https://en.wikipedia.org/wiki/Intelligent_tutoring_system)
+    - Urban Studies (https://en.wikipedia.org/wiki/Index_of_urban_studies_articles)
+    - cyber-human systems (https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=504958)
+    - Mobile Crowd Sensing
+
+##Articles##
+    - How small system dynamics models can help the public policy process (http://onlinelibrary.wiley.com/doi/10.1002/sdr.442/abstract)
+    - Human-machine super intelligence can solve the worlds most dire problems (http://www.rdmag.com/news/2016/01/human-machine-superintelligence-can-solve-worlds-most-dire-problems)
+
+##Organizations##
+    - Center for Data Science and Public Policy (http://dsapp.org/)
+    - Data Science for Social Good (http://dssg.uchicago.edu/)
+    - Center for Urban Science and Progress (http://cusp.nyu.edu/)
+    - Human Computation Institute (http://humancomputation.org/)
+    - Palantir (https://www.palantir.com/)
+    - Ashoka (https://www.ashoka.org/)

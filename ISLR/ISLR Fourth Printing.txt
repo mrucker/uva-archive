@@ -66,6 +66,6 @@ flexible models often have high variance and low bias
 
 "In a real-life situation in which f is unobserved, it is generally not possible to explicitly compute the test MSE, bias, or variance for a statistical learning method. Nevertheless, one should always keep the bias-variance trade-off in mind." (p36)
 
-Test Error Rate - Avg(I(ym0 != yt0)). Because I is either 1 or 0 the average will give us the percentage that were incorrect.
+Test Error Rate - Avg(I(ym0 != yt0)). Because I is either 1 or 0 the average will give us the percentage that were incorrect. (p37)
 
-I() stands for an "Indicator Variable" which basically means a qualitative variable (in the above example the output of I() is either 1 or 0)
+I() stands for an "Indicator Variable" which basically means a qualitative variable (in the above example the output of I() is either 1 or 0) (p37)
