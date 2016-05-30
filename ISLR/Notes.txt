@@ -1,3 +1,4 @@
+#region Chapter 1
 Types of learning 
     > Supervised (p1)
     > Unsupervised (p1)
@@ -21,7 +22,9 @@ Commutative = changing the order of operands doesn't change the result (e.g. a+b
 Associative = changing the order of a sequence doesn't change the result (e.g. [a+b]+c = a+[b+c])
 
 "A central problem in all statistical learning situations involves choosing the best method for a given application." (p12)
+#endregion
 
+#region Chapter 2
 Y = f(X) + e (p16)
 
 f(X) represents the "ideal" relationship between X and Y. For example, if X is time and Y the is velocity of falling object, then the ideal relationship is Y = f(X) = 9.81 * X. (p18)
@@ -69,3 +72,8 @@ flexible models often have high variance and low bias
 Test Error Rate - Avg(I(ym0 != yt0)). Because I is either 1 or 0 the average will give us the percentage that were incorrect. (p37)
 
 I() stands for an "Indicator Variable" which basically means a qualitative variable (in the above example the output of I() is either 1 or 0) (p37)
+
+When using KNN the smaller K is the more flexible our algorithm is and the bigger K is the less flexible our algorithm is. (p40)
+
+Classification learning algorithms exhibit the same U curve with Test Data as flexibility increases or decreses. (p40)
+#endregion
