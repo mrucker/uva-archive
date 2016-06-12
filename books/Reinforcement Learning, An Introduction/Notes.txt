@@ -15,6 +15,9 @@ Markov Decision Process
 Control Theory
 Bellman equation
 
+Central limit theorem (CLT)
+Law of large numbers (LLN)
+
 Calculas
 Linear Algebra
 Statistics
@@ -48,6 +51,10 @@ Supervised learning creates its own Value function?
 
 #region Thoughts
 Through genetic algorithms and supervised learning it is possible to evolve/learn reinforcement learning solutions without actually doing reinforcement learning.
+
+The effectiveness of a specific learning algorithm can very substantially based on the problem being solved. This is true even within variations of a single class of problems.
+
+What is the outcome with systems of learning algorithms?
 #endregion
     
 #region Difference between supervised learning and reinforcement learning
