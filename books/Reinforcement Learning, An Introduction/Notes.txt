@@ -17,11 +17,20 @@ Bellman equation
 
 Central limit theorem (CLT)
 Law of large numbers (LLN)
+Probability Distribution
 
 Calculas
 Linear Algebra
 Statistics
 Probability
+#endregion
+
+#region Notes
+in regards to learning algorithms convergence means we eventually reach a point where new information doesn't change our algorithm's output (p35)
+
+if we assume the there is a stationary answer then convergence is desirable. If we assume the correct answer changes over time then convergence isn't desirable. (p35)
+
+In order to guarantee mathematical convergence two conditions must be met: sum(step sizes) = (infinity) && sum([step sizes]^2) < (infinity) (p35)
 #endregion
 
 #region Questions
