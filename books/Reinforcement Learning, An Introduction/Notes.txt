@@ -9,6 +9,7 @@ Reward Function
 Value Function
 Model
 
+Law of Effect
 Secondary Reinforcers
 The Credit Assignment Problem
 Markov Decision Process
@@ -18,6 +19,9 @@ Bellman equation
 Central limit theorem (CLT)
 Law of large numbers (LLN)
 Probability Distribution
+Learning Automata
+Statistical Learning Theory (psychology)
+stochastic iterative algorithms
 
 Calculas
 Linear Algebra
@@ -26,11 +30,36 @@ Probability
 #endregion
 
 #region Notes
+In reinforcement learning we aren't allowed to modify our reward function
+In reinforcement learning we are allowed to modify our value function (Assuming it is an estimate. If it is an optimal value function then we can't modify it.)
+
+Reinforcement Learning Algorithms can have a model. A model allows the Reinforcement Learning algorithm to search the action-state space. Models aren't required though and sometimes aren't possible. For example, a RL algorithm for playing 5 card draw likely couldn't build a model to determine how opponents respond to actions. Models are used for *Planning*.
+
+"Modern reinforcement learning spans the spectrum from low-level, trial-and-error learning to high-level, deliberative planning." (p10)
+
+Reinforcement learning works best in Environments with large State sets when it can generalize effectively (p14)
+
+"We define reinforcement learning as any effective way of solving reinforcement learning problems" (p17)
+
+"NewEstimate = OldEstimate + (StepSize) * ( Actual - OldEstimate )" (p33)
+
 in regards to learning algorithms convergence means we eventually reach a point where new information doesn't change our algorithm's output (p35)
 
 if we assume the there is a stationary answer then convergence is desirable. If we assume the correct answer changes over time then convergence isn't desirable. (p35)
 
 In order to guarantee mathematical convergence two conditions must be met: sum(step sizes) = (infinity) && sum([step sizes]^2) < (infinity) (p35)
+
+The initial values we prime our learning algorithm with are our "bias" (p35)
+
+For step sizes that don't "converge" initial bias influence learning algorithms for ever. For step sizes that "converge" initial biases eventually are inconsequential. (p35)
+
+learning vs nonlearning algorithms -> using historical information to come up with better solutions
+stationary vs nonstationary problems -> ones where the optimal answers do or don't change
+associative vs nonassociative problems -> associating environmental information to make better choices
+
+I can reframe the n-arm bandit problem so that it becomes an associative problem. 
+
+Exclusive, stationary, non-associative
 #endregion
 
 #region Questions
