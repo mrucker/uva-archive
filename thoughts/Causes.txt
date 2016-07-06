@@ -1,0 +1,34 @@
+After coming up with a theory my job as a scientist is to seek to falsify my claim not validate it
+
+Create intentionally built environs to get at what we are interested in
+
+Cause = INUS (Insufficient but Non-redudant part of an Unecessary but Sufficient condition) (e.g. cigarette butt causing forest fire)
+
+A cause is not deterministic but only increases the probability that an effect will occur
+
+There are mannipulable and nonm-manipulable causes
+
+As we develop new technology does the set of manipulable causes grow?
+
+counterfactual
+    > If  A then ?
+    > If !A then ?
+    
+Manipulable and nonmanipulable is both simply something we don't yet have the technology to do and also 
+
+If A Causes B Then
+    > A came before B (The cause preceded the effect)
+    > A correlates with B reliably (The cause was related to the effect)
+    > Condition A and B are actually both caused by a third condition C (Can't find plausible alternative explanation)
+    
+There is a difference between a causal description (A causes B) and a causal explanation (A causes B because ...)
+
+Types of generalizations = 
+
+Extrapolation: Generalizing to a UTOS (units, treatments, observations and settings) not directly observed
+Representation: generalizing to the domain about which a question is asked
+
+ontological vs epistimological assumptions?
+
+External Validity -- how much does my experiment match up with the environment I wish to study?
+Construct Validity -- how much does my experiment measure what I wish to study?
