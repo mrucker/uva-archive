@@ -1,0 +1,14 @@
+1a. many observations, few variables. I would expect a more flexible learning method to be better because a small n means there a smaller result space while a large p increases the likelihood all cases are represented by our training data. High n and low p means variance is less of a problem.
+1b. less flexible because we have an extremely large vector space for our results and not very many observations meaning there are likely lots of outcomes that probably aren't represented by our training data. (flexible would likely have a high variance)
+1c. in general I'd expect a more flexible learning method to be better because a less flexible one would have a really high bias.
+1d. I think a flexible method would be worse. The high irreducible error would mean that our data likely deviates greatly from f(x) and matching it too closely is probably incorrect.
+
+2a. Regression, inference, n = 500, p = 5
+2b. Classification, prediction, n = 20 (or 21), p = 14
+2c. Regression, prediction, ....
+
+3a. Bias   : high -> low -> mid , flexibility: low -> high
+    Var    : mid  -> low -> high, flexibility: low -> high
+    Train E: high -> low -> low , flexibility: low -> high
+    Test E : high -> low -> high, flexibility: low -> high
+    Bayes E: no effect?         , flexibility: low -> high

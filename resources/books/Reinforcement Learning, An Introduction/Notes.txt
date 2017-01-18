@@ -1,0 +1,116 @@
+#region Vocab
+Reinforcement learning
+Supervised learning
+Unsupervised learning
+Genetic learning
+
+Policy
+Reward Function
+Value Function
+Model
+
+Law of Effect
+Secondary Reinforcers
+The Credit Assignment Problem
+Markov Decision Process
+Control Theory
+Bellman equation
+
+Central limit theorem (CLT)
+Law of large numbers (LLN)
+Probability Distribution
+Learning Automata
+Statistical Learning Theory (psychology)
+stochastic iterative algorithms
+
+Calculas
+Linear Algebra
+Statistics
+Probability
+#endregion
+
+#region Notes
+In reinforcement learning we aren't allowed to modify our reward function
+In reinforcement learning we are allowed to modify our value function (Assuming it is an estimate. If it is an optimal value function then we can't modify it.)
+
+Reinforcement Learning Algorithms can have a model. A model allows the Reinforcement Learning algorithm to search the action-state space. Models aren't required though and sometimes aren't possible. For example, a RL algorithm for playing 5 card draw likely couldn't build a model to determine how opponents respond to actions. Models are used for *Planning*.
+
+"Modern reinforcement learning spans the spectrum from low-level, trial-and-error learning to high-level, deliberative planning." (p10)
+
+Reinforcement learning works best in Environments with large State sets when it can generalize effectively (p14)
+
+"We define reinforcement learning as any effective way of solving reinforcement learning problems" (p17)
+
+"NewEstimate = OldEstimate + (StepSize) * ( Actual - OldEstimate )" (p33)
+
+in regards to learning algorithms convergence means we eventually reach a point where new information doesn't change our algorithm's output (p35)
+
+if we assume the there is a stationary answer then convergence is desirable. If we assume the correct answer changes over time then convergence isn't desirable. (p35)
+
+In order to guarantee mathematical convergence two conditions must be met: sum(step sizes) = (infinity) && sum([step sizes]^2) < (infinity) (p35)
+
+The initial values we prime our learning algorithm with are our "bias" (p35)
+
+For step sizes that don't "converge" initial bias influence learning algorithms for ever. For step sizes that "converge" initial biases eventually are inconsequential. (p35)
+
+learning vs nonlearning algorithms -> using historical information to come up with better solutions
+stationary vs nonstationary problems -> ones where the optimal answers do or don't change
+associative vs nonassociative problems -> associating environmental information to make better choices
+
+I can reframe the n-arm bandit problem so that it becomes an associative problem. 
+
+Exclusive, stationary, non-associative
+#endregion
+
+#region Questions
+What learning algorithms are able to scale well with many inputs or decisions?
+#endregion
+
+#region Quotes
+
+Supervised learning creates its own Value function?
+
+    The Law of Effect includes the two most important aspects of what we mean
+    by trial-and-error learning. First, it is selectional, meaning that it involves
+    trying alternatives and selecting among them by comparing their consequences.
+    Second, it is associative, meaning that the alternatives found by selection are
+    associated with particular situations. Natural selection in evolution is a prime
+    example of a selectional process, but it is not associative. Supervised learning
+    is associative, but not selectional. It is the combination of these two that is
+    essential to the Law of Effect and to trial-and-error learning. Another way of
+    saying this is that the Law of Effect is an elementary way of combining search
+    and memory: search in the form of trying and selecting among many actions in
+    each situation, and memory in the form of remembering what actions worked
+    best, associating them with the situations in which they were best. Combining
+    search and memory in this way is essential to reinforcement learning.      
+    --Reinforcement Learning: An Introduction p18
+
+    #endregion
+
+#region Thoughts
+Through genetic algorithms and supervised learning it is possible to evolve/learn reinforcement learning solutions without actually doing reinforcement learning.
+
+The effectiveness of a specific learning algorithm can very substantially based on the problem being solved. This is true even within variations of a single class of problems.
+
+What is the outcome with systems of learning algorithms?
+#endregion
+    
+#region Difference between supervised learning and reinforcement learning
+
+    Barto, A. G., Anandan, P. (1985). Pattern recognizing stochastic learning automata. IEEE Transactions on Systems, Man, and Cybernetics, 15:360-375.
+
+    Barto, A. G., Sutton, R. S. (1981a). Goal seeking components for adaptive intelligence: An initial assessment. Technical Report AFWAL-TR-81-1070. Air Force Wright Aeronautical Laboratories/Avionics Laboratory, Wright-Patterson AFB, OH.
+
+    Barto, A. G., Sutton, R. S. (1981b). Landmark learning: An illustration of associative search. Biological Cybernetics, 42:1-8.
+
+    Barto, A. G., Sutton, R. S., Brouwer, P. S. (1981). Associative search network: A reinforcement learning associative memory. Biological Cybernetics, 40:201-211.
+
+    Klopf, A. H. (1972). Brain function and adaptive systems|A heterostatic theory. Technical Report AFCRL-72-0164, Air Force Cambridge Research Laboratories, Bedford, MA. A summary appears in Proceedings of the International Conference on Systems, Man, and Cybernetics. IEEE Systems, Man, and Cybernetics Society, Dallas, TX, 1974.
+
+    Klopf, A. H. (1975). A comparison of natural and artificial intelligence. SIGART Newsletter, 53:11-13.
+
+    Klopf, A. H. (1982). The Hedonistic Neuron: A Theory of Memory, Learning, and Intelligence. Hemisphere, Washington, DC.
+
+    Klopf, A. H. (1988). A neuronal model of classical conditioning. Psychobiology, 16:85-125.
+
+#endregion
