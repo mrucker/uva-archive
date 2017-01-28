@@ -25,3 +25,20 @@ Entropy - Has different meanings in Statistical Mechanics, Thermodynamics and In
 	> Statistical Mechanics -- 
 	
 Random Variable -- an unknown quantity. Even though it is unkown we can come to know certain statistics that can describe its potential values.
+
+RL Classifications
+
+	State
+		Environment State
+		Agent       State
+		Belief      State
+
+	Policy Search -- Are trying to determine the best action
+
+	Value Search  -- Are we trying to determine the best state
+
+	Model Free    -- (classical reinforcement learning)
+	
+	Model Based   -- (classical Operations/Optimal Control)
+	
+	
