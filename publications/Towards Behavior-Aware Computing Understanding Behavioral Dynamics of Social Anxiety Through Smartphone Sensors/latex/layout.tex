@@ -1,0 +1,134 @@
+\documentclass[acmlarge]{acmart}
+
+\usepackage{booktabs} % For formal tables
+\usepackage{balance}       % to better equalize the last page
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}      
+\usepackage{amsmath,empheq}
+\usepackage{longtable}
+\usepackage{enumitem}
+
+
+\usepackage[ruled]{algorithm2e} % For algorithms
+\renewcommand{\algorithmcfname}{ALGORITHM}
+\SetAlFnt{\small}
+\SetAlCapFnt{\small}
+\SetAlCapNameFnt{\small}
+\SetAlCapHSkip{0pt}
+
+\IncMargin{-\parindent}
+
+% Metadata Information
+%\acmJournal{PACM Interact. Mob. Wearable Ubiquitous Technol}
+%\acmVolume{9}
+%\acmNumber{4}
+%\acmArticle{1}
+\acmYear{2017}
+%\acmMonth{2}
+%\acmArticleSeq{1}
+
+%\acmBadgeR[http://ctuning.org/ae/ppopp2016.html]{ae-logo}
+%\acmBadgeL[http://ctuning.org/ae/ppopp2016.html]{ae-logo}
+
+
+% Copyright
+%\setcopyright{acmcopyright}
+%\setcopyright{acmlicensed}
+%\setcopyright{rightsretained}
+%\setcopyright{usgov}
+\setcopyright{usgovmixed}
+%\setcopyright{cagov}
+%\setcopyright{cagovmixed}
+
+% DOI
+\acmDOI{0000001.0000001}
+
+% Paper history
+% \received{February 2007}
+% \received{March 2009}
+% \received[accepted]{June 2009}
+
+% Document starts
+\begin{document}
+% Title portion
+\title[Understanding Behavioral Dynamics of Social Anxiety Through Smartphone Sensors]{Towards Behavior-Aware Computing: Understanding Behavioral Dynamics of Social Anxiety Through Smartphone Sensors} 
+%Behavioral Dynamics of Smartphone Use and Social Anxiety
+%%Understanding Behavioral Dynamics of Smartphone Use In Support of Intervention of Social Anxiety-----I like this title better..-Yu
+%%Understanding Behavioral Dynamics of Smartphone Use towards Personalized Intervention for Social Anxiety
+%
+\author{Yu Huang}
+\author{Jiaqi Gong}
+\author{Mark Rucker}
+\author{Wesley Bonelli}
+\author{Kevin Leach}
+\author{Philip I Chow}
+\author{Karl Fua}
+\author{Matthew S. Gerber}
+\author{Bethany A Teachman}
+\author{Laura E Barnes}
+\affiliation{%
+  \institution{University of Virginia}
+  \department{Department of Systems and Information Engineering, Department of Psychology}
+  \city{Charlottesville}
+  \state{VA}
+  \postcode{22903}
+  \country{USA}
+}
+
+\begin{abstract}
+The way people use smartphones provides a window into the relationship between behaviors and mental health. This relationship is of particular significance to individuals with elevated social anxiety, as it helps to reveal when and where their stress increases in relation to social interactions, ultimately leading to more precise treatment delivery and interventions.  In this collaboration between engineers and psychologists, we present the first study to use smartphone sensors to examine socially anxious individuals' fine-grained behaviors around periods in which they engage in some form of social interaction, and how this might be different as a function of location (e.g., at home, at work, or at an unfamiliar location). To characterize behavior, we use smartphone accelerometer data before, during, and after phone calls and text messages as well as the semantic location at the time of communication. In a two-week study with 52 college students, we show that there is a significant difference in behaviors for individuals based on social anxiety levels and locations, in that individuals higher (vs. lower) in social anxiety symptoms exhibit more movement (as tracked by the accelerometer) around the time of phone calls, especially in an unfamiliar location (i.e., not home or at work). Finally, we discuss the implications of these findings for developing better interventions for socially anxious individuals.
+% * <karl.fua@gmail.com> 2017-02-15T16:37:15.210Z:
+% 
+% > for individuals based on social anxiety levels and locations, in that high socially anxious individuals exhibit more movement (as tracked by the accelerometer) when using phone calls/texts, especially if they are in an unfamiliar location (i.e., not home or at work)
+% 
+% changed this part
+% 
+% ^.
+% * <karl.fua@gmail.com> 2017-02-15T16:31:03.033Z:
+% 
+% >  In this paper, we present the first study to passively monitor behavioral dynamics in social anxiety to understand how behaviors vary across different communication media (i.e., phone calls, text messages).
+% 
+% I think here it's more "In this paper, we present the first study to passively monitor accelerometer data (or however we end up wanting to describe "behavior") to understand socially anxious individuals' fine movement patterns around periods where they engage in some form of social interactions (as indicated by their use of calls or texts), and how this might be different as a function of location (e.g., at home, at work, or at an unfamiliar location).
+% 
+% ^.
+% * <karl.fua@gmail.com> 2017-02-15T16:25:04.809Z:
+% 
+% > behavior
+% I think this feels really vague and too broad, because behavior could mean a variety of things. But I'm struggling to define what behavior in this case means--is "motion and movement patterns extracted by the accelerometer (that can indicate fidgeting, pacing etc)" in the right ballpark?
+% 
+% ^.
+
+%Understanding behavioral dynamics of mobile phone use is fundamental for facilitating better treatment and intervention for mental health problems such as social anxiety since scholars in psychology have noted that cell phone use is influencing human health and behavior, specifically for the college students who are the most rapid adopters of cell phone technology. However, the relationship between physiological and psychological dimensions of behavioral dynamics of cell phone use has not understood well. Researchers mostly explore models of smartphone usage patterns from subject measures (i.e. surveys) or application usage data without consideration of behavior dynamics with the further goal of facilitating interventions for human health. In this work, we explore these characteristics of behavior dynamics of cell phone use and show their performance in discriminating groups with different social anxiety levels. We analyzed two weeks of behavior data, including accelerometer, GPS, and contacts (call and text), from 64 cell phone users using our unsupervised feature learning approach. Our results have profound implications on the relationships between cell phone use and social anxiety level and determination of when and where the intervention should be delivered.
+\end{abstract}
+
+
+%
+% The code below should be generated by the tool at
+% http://dl.acm.org/ccs.cfm
+% Please copy and paste the code instead of the example below. 
+%
+
+%
+% End generated code
+%
+
+% We no longer use \terms command
+%\terms{Design, Algorithms, Performance}
+
+\keywords{social anxiety, behavioral dynamics, smartphone use, unsupervised learning}
+
+
+\thanks{This research was partly supported by the Hobby Postdoctoral and Predoctoral Fellowships in Computational Science. 
+ Author's addresses: Y. Huang, K. Leach, Charles L. Brown Department of Electrical and Computer Engineering, Department of Computer Science, University of Virginia, Virginia, 22904; J. Gong, Charles L. Brown Department of Electrical and Computer Engineering, University of Virginia, Virginia, 22904; W. Bonelli,Department of Computer Science, University of Virginia, Virginia, 22904;M. Rucker, M. Gerber, L. E. Barnes, Systems and Information Engineering Department, University of Virginia, Virginia, 22904; P. I. Chow, K. Fua, B. A. Teachman,  Department of Psychology, University of Virginia, Virginia, 22904.}
+
+
+\maketitle
+
+% The default list of authors is too long for headers}
+\renewcommand{\shortauthors}{Y. Huang et al.}
+
+\input{content}
+
+
+\end{document}

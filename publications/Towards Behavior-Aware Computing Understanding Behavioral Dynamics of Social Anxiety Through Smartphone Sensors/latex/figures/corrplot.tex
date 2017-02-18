@@ -1,0 +1,12 @@
+\documentclass{standalone}
+\usepackage{tikz}
+\usepackage{graphicx}
+
+\begin{document}
+\begin{tikzpicture}
+\node [anchor=west] (A) {\includegraphics{./corrplot_MC_FAC1.pdf}};
+\node [anchor=west, right of=A, node distance=500pt] (B) {\includegraphics{./corrplot_MC_FAC2.pdf}};
+\node [anchor=west, right of=B, node distance=500pt] (C) {\includegraphics{./corrplot_MT_FAC1.pdf}};
+\node [anchor=west, right of=C, node distance=500pt] (D) {\includegraphics{./corrplot_MT_FAC2.pdf}};
+\end{tikzpicture}
+\end{document}
