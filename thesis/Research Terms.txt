@@ -41,4 +41,12 @@ RL Classifications
 	
 	Model Based   -- (classical Operations/Optimal Control)
 	
-	
+Theory of Mind -- the ability to attribute mental states (desires, motivations, goals, perspectives) to oneself and others
+
+Autonomous Moral Agents -- 
+
+Connectionism -- 
+
+Frame Problem -- describes an issue with using first-order logic (FOL) to express facts about a robot in the world. Representing the state of a robot with traditional FOL requires the use of many axioms that simply imply that things in the environment do not change arbitrarily.
+
+First Order Logic -- Predicate logic combined with Quantifiers
