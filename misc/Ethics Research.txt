@@ -1,0 +1,76 @@
+AMA = Autonomous Moral Agents
+Theory of Mind and Mindreading (Bello 2013)
+	
+Programming Machine Ethics (Pereira 2016)
+	> Moral Facets Amenable to Logic Programming
+		> Doctrine of Double Effect
+		> Dual-Process Model
+		> Counterfactual Thinking
+	> Individually Permissible Actions
+		> Abduction
+		> Modal Logic (necessary)
+		> Deontic Logic (duties)
+		> Utilitarianism
+		> Prima Facie
+	> Cognitive Abilities that Encourage Cooperative Behavior
+		> Intention Recognition
+		> Forgiveness
+		> Revenge
+		> Apology
+		> Commitment
+
+Moral choices for an AMA that can only share information?
+	> Misrepresent
+	> Deceive
+	> Leak
+	> Keep a secret
+
+How to test moral decision making
+	> Not Moral Turing Test? (Arnold 2016)
+
+Are the morals required of Autonomous Agents dependent on the actions they can take?
+	
+Necessary Capabilities
+	> Awareness of the consequences of its actions (Allen 2000)
+	> Guilt (Arkin 2012)
+	> Deception (Arkin 2012)
+	> Dignity (Arkin 2012)
+
+Human values are fragile and narrow (Soares 2015)
+	
+Aware of the consequences (this is separate from "caring" about the consequences)
+
+Utilitarianism -- Ends justifies means
+Virtues        -- 
+Deontology     -- Should or shouldn't
+Cooperation    -- 
+Association    -- Supervised Learning
+Emotions       -- 
+
+AMA in small action spaces
+
+If our agents have substantially different action spaces than humans can they have moral reasoning?
+	Ethics of traffic light?
+	Ethics of web server?
+
+Make something and test something
+
+Why don't we think of traffic lights as moral agents?
+
+Which autonomous agents need morals and which don't?
+
+Three paths
+	> Evolve Cooperation using east asian ethics?
+	> Develop a theory of ethics based on intent?
+	> Study ethics within much small action spaces?
+	
+G. Veruggio, "The birth of roboethics", in Proc. IEEE Int. Conf. Robot. Autom. Workshop Robo-Ethics, Barcelona, Spain, pp. 2–4, Apr. 18, 2005.
+
+Algorithm anxiety - Do decision-making algorithms pose a threat to autonomy?
+Prescriptive and Proscriptive Moral Regulation for Autonomous Vehicles in Approach and Avoidance
+Technology as Moral Proxy – Autonomy and Paternalism by Design – Jason Millar
+On the Moral, Legal, and Social Implications of the Rearing and Development of Nascent Machine Intelligences
+Mechanizing Modal Psychology
+Acting vs. Being Moral: The Limits of Technological Moral Actors
+
+Diffusion Decision Model for Two Choice Decisions
