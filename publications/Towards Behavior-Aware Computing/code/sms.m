@@ -1,47 +1,38 @@
 global ROOT USERS; 
 
-ROOT  = 'C:\Users\mark.rucker\Projects\mr2an\publications\Towards Behavior-Aware Computing\data';
+ROOT  = '.';
 USERS = ['1000'; '1001'; '1002'; '1003'; '1004'; '1005'; '1047'; '1048'; '1049'; '1078'; '1079'; '1080'; '1081'; '1083'; '1084'; '1085'; '1087'; '1088'; '1090'; '1091'; '2003'; '2004'; '2006'; '2007'; '2008'; '2009'; '2012'; '2014'; '2015'; '2016'; '2017'; '2018'; '2019'; '2020'; '2021'; '2022'; '2023'; '2024'; '2025'; '2026'; '2027'; '2028'; '2029'; '2037'; '2047'; '2048'; '2049'; '2050'; '2051'; '2084'; '2085'; '2086'; '2087'; '2088'; '2089'; '2090'; '2091'; '2092'; '2093'; '2094'; '2095'; '2096'; '2097'; '2098'; '2099'];
 
 Run();
 
 function Run(); global USERS;
     for user = USERS.'
-        values = ReadValues(user.');
+        [values, dates] = ReadValues(user.');
 
-        grp_dt = cell(0);
-        grp_sz = cell(0);
+        groups = zeros(numel(dates), 1);
         grp_id = 1;
 
-        if(~isempty(values))
-            grp_dt{grp_id} = datetime(values(1), 'ConvertFrom', 'datenum');
-            grp_sz{grp_id} = 1;
+        for i = 1:numel(dates)
 
-            for i = 1:length(values)-1
+            groups(i) = grp_id;
 
-                if(etime(datevec(values(i+1)), datevec(values(i))) < 600)
-                    grp_sz{grp_id} = grp_sz{grp_id} + 1;
-                else
-                    grp_id = grp_id + 1;
-
-                    grp_dt{grp_id} = datetime(values(i+1), 'ConvertFrom', 'datenum');
-                    grp_sz{grp_id} = 1;
-                end
+            if(i < numel(dates) && etime(datevec(dates(i+1)), datevec(dates(i))) > 600)
+                grp_id = grp_id + 1;
             end
         end
 
-        WriteValues(user.', grp_sz, grp_dt);
+        WriteValues(user.', values, groups);
     end
 end
 
-function values = ReadValues(user); global ROOT;
+function [values, dates] = ReadValues(user); global ROOT;
 
     ME = [];
     fid = fopen([ROOT '\in\' 'sms_'  user '.csv']);
 
     try        
         values = textscan(fid, '%s %s %f %s %s', 'HeaderLines', 1, 'Delimiter', ',');
-        values = datenum(datetime(values{3}/1000, 'ConvertFrom', 'posixtime')).';
+        dates  = datenum(datetime(values{3}/1000, 'ConvertFrom', 'posixtime'));
     catch ME
     end
 
@@ -52,16 +43,16 @@ function values = ReadValues(user); global ROOT;
     end
 end
 
-function WriteValues(user, grp_sz, grp_dt); global ROOT;
+function WriteValues(user, values, groups); global ROOT;
 
     ME = [];
     fid = fopen([ROOT '\out\' 'sms_'  user '.csv'], 'w');
-
+    
     try
-        fprintf(fid, 'Text Group Size, Text Group Start\r\n');
+        fprintf(fid, 'PID,Date,Date_long,FromNumber,ToNumber,Group\r\n');
 
-        for i = 1:length(grp_sz)
-            fprintf(fid, [num2str(grp_sz{i}) ',' datestr(grp_dt{i}) '\r\n']);
+        for i = 1:numel(groups)
+            fprintf(fid, [values{1}{i} ',' values{2}{i} ',' num2str(values{3}(i)) ',' values{4}{i} ',' values{5}{i} ',' num2str(groups(i)) '\r\n']);
         end
     catch ME
     end
