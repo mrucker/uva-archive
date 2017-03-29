@@ -1,0 +1,74 @@
+Hi Dan,
+
+In follow up to our last call, Prof. Gerber and I have been talking about what an  ideal data set might look like. I'm going to outline that conversation at varying levels of detail. Please engage at the level that is most helpful to you.
+
+At a very high level it seems to us that any sucessful hybrid assistance system would have to keep three 'stakeholders' in mind:
+	Self Represented Litigant
+	Attorneys
+	Court System
+	
+One obvious stakeholder that isn't in that list is TR. The reason for that is three fold: we didn't feel we understood TR's own interest enough, the entire project is being designed for TR's interest and, finally, we felt it might add a complication that could hinder the project at its current phase.
+
+To begin to understand the relationship between the above three actors we borrowed from the report you gave us. In that report it breaks down the SRL experience into discrete steps (see attachment).
+
+For each step we want to collect data about all parties. This includes data such as:
+	Litigant time spent on step
+	Litigant money spent on step
+	Litigant non-attorney help received
+	Litigant attorney help received
+	Litigant sucessfully completed step
+	Attorney pre-service preparation time
+	Attorney direct-service time
+	Attorney post-service wrap-up time
+	Attorney hourly rate
+	Court processing time
+	Court resources used
+
+With just those stats for each step we could answer questions like:
+	Which steps cause litigants the most trouble?
+	Which steps require the most time for Lawyers?
+	What resources are most helpful for litigants on difficult steps?
+	Which steps are most challenging for courts?
+
+Along with step data if we had context data to associate with it like:
+	Demographic data on Litigant
+	Demographic data on Attorney
+	Case outcome
+	Case Type
+	Is litigant Plaintiff or Defendant
+	Court Jurisdiction
+	Judge presiding over case
+
+Then we could also start to probe questions beyond step to step, like:
+	Do certain litigants and attorneys work better together?
+	Do different jurisdictions or judges want different things from litigants? 
+	What actions can litigants take to maximize their odds of winning?
+
+With all the above data, we think we could create a very complete picture of the whole process. Of course this would be just a start -- systems change and every person is unique. That is where our own research interests would really come in. How do we build software tools that learn fast enough to support complex human systems and goals?
+
+Alright, hopefully that's not too much at this point. What I'd like from this email is simply to help us sync up more in our ideas. Everything in here is conjecture on our end. If our ideas are headed in a different direction from yours please let us know. Either way, at your convenience, we look forward to hearing your thoughts and reactions.
+
+Thanks,
+
+Mark
+
+---
+Mark Rucker
+
+=====================================================================================================================================================================
+
+Thanks Mark.  This is a really good start.
+ 
+I would recommend simplifying the initial focus even further to include just the SRL and the courts.  I agree the attorney is a core stakeholder, but the SRL faces immense challenges that we could solve for before they even contemplate hiring an attorney.  Of course, this is up for discussion and I would be interested to hear your thoughts on my recommendation.
+ 
+I think the attached steps do a nice job of mapping the general process of a case throughout the court system, but is missing some key pre-process initiations.  For example,
+ 
+	How does an SRL determine they have a legal issue?
+	Once they determine they have a legal issue, how do they identify the precise legal claim and various courses of action?
+	Finally, what are the factors one considers to pursue the legal claim without an attorney?
+ 
+These questions (particularly the first) may be self-fulfilling, but point towards a level of assistance the litigant may need before bringing in an attorney.
+ 
+Anyway, food for thought.  I’m looking forward to our call this afternoon where we can discuss further.
+ 
+Dan
