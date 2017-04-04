@@ -16,53 +16,45 @@ for userid = getUserIds()
 
     disp(userid);
 
-    %tic
-    %calls = loadCallWindowCells(userid{1});
-    %texts = loadTextWindowCells(userid{1});
-    %toc
+    tic
+    call_window_names = loadCallWindowNames(userid{1});
+    text_window_names = loadTextWindowNames(userid{1});
+    toc
 
     tic
-    %signals = loadWindowSignals(userid{1}, unique(vertcat(calls{:}, texts{:})));
-    callsignals = loadCallSignals(userid{1});
-    textsignals = loadTextSignals(userid{1});
+    call_window_signals = loadCallWindowSignals(userid{1}, unique(vertcat(call_window_names{:})));
+    text_window_signals = loadTextWindowSignals(userid{1}, unique(vertcat(text_window_names{:})));
     toc
     
     tic
-        
-    if isempty(signals); continue; end;
-    
-    calls_windows_zero = calls_windows_zero + sum(callsignals == 0);
-    calls_windows_not_zero = calls_windows_not_zero + sum(callsignals ~= 0);
 
-    texts_windows_zero = texts_windows_zero + sum(textsignals == 0);
-    texts_windows_not_zero = texts_windows_not_zero + sum(textsignals ~= 0);  
-    
-%     for windows = calls
-%         if isempty(windows); continue; end
-% 
-%         call_windows_zero = sum(cellfun(@(w) signals(w) == 0, windows{1}(isKey(signals, windows{1}))));
-%         call_windows_not_zero = sum(cellfun(@(w) signals(w) ~= 0, windows{1}(isKey(signals, windows{1}))));
-% 
-%         calls_windows_zero = calls_windows_zero + call_windows_zero;
-%         calls_windows_not_zero = calls_windows_not_zero + call_windows_not_zero;
-% 
-%         calls_zero = calls_zero + (call_windows_not_zero == 0);
-%         calls_not_zero = calls_not_zero + (call_windows_not_zero ~= 0);
-%     end
-% 
-%     for windows = texts
-%         if isempty(windows); continue; end
-% 
-%         text_windows_zero = sum(cellfun(@(w) signals(w) == 0, windows{1}(isKey(signals, windows{1}))));
-%         text_windows_not_zero = sum(cellfun(@(w) signals(w) ~= 0, windows{1}(isKey(signals, windows{1}))));
-% 
-%         texts_windows_zero = texts_windows_zero + text_windows_zero;
-%         texts_windows_not_zero = texts_windows_not_zero + text_windows_not_zero;
-% 
-%         texts_zero = texts_zero + (text_windows_not_zero == 0);
-%         texts_not_zero = texts_not_zero + (text_windows_not_zero ~= 0);
-%         
-%     end
+    if ~isempty(call_window_signals) 
+        calls_windows_zero     = calls_windows_zero + sum(cell2mat(values(call_window_signals)) == 0);
+        calls_windows_not_zero = calls_windows_not_zero + sum(cell2mat(values(call_window_signals)) ~= 0);
+        
+        for windows = call_window_names
+            if isempty(windows); continue; end
+            
+            windows        = windows{1}(isKey(call_window_signals, windows{1}));
+            signals        = cell2mat(values(call_window_signals, windows));
+            calls_zero     = calls_zero + all(signals == 0);
+            calls_not_zero = calls_not_zero + any(signals ~= 0);
+        end
+    end
+
+    if ~isempty(text_window_signals)
+        texts_windows_zero     = texts_windows_zero + sum(cell2mat(values(text_window_signals)) == 0);
+        texts_windows_not_zero = texts_windows_not_zero + sum(cell2mat(values(text_window_signals)) ~= 0);
+
+        for windows = text_window_names
+            if isempty(windows); continue; end
+
+            windows        = windows{1}(isKey(text_window_signals, windows{1}));
+            signals        = cell2mat(values(text_window_signals, windows));
+            texts_zero     = texts_zero + all(signals == 0);
+            texts_not_zero = texts_not_zero + any(signals ~= 0);
+        end
+    end
     toc
 end
 
@@ -97,9 +89,9 @@ texts_not_zero
 %plot_2d(all_text_tsne, all_text_lbls, 'text figure');
 %plot_2d(all_full_tsne, all_full_lbls, 'full figure');
 
-function userIds = getUserIds(); global SIGNAL_PATH;
-    userIds = dir(SIGNAL_PATH);
-    userIds = {userIds.name};
+function userIds = getUserIds(); global CALL_SIGNAL_PATH TEXT_SIGNAL_PATH;
+    userIds = vertcat(dir(CALL_SIGNAL_PATH), dir(TEXT_SIGNAL_PATH));
+    userIds = unique({userIds.name});
     
     userIds = userIds(~strcmp(userIds, '.'));
     userIds = userIds(~strcmp(userIds, '..'));
@@ -319,11 +311,11 @@ function texts = loadTexts(user); global TEXT_PATH;
 
 end
 
-function calls = loadCallWindowCells(user); global CALL_PATH;
+function calls = loadCallWindowNames(user); global CALL_WINDOW_PATH;
     calls = cell(0,1);
 
     try
-        cd([CALL_PATH '/' user '/']);
+        cd([CALL_WINDOW_PATH '/' user '/']);
 
         for file = fileNames('*.txt')      
        
@@ -331,7 +323,7 @@ function calls = loadCallWindowCells(user); global CALL_PATH;
                 data  = importdata(file{1});
 
                   if(~isempty(data))
-                    calls{end+1} = unique(strrep(data, '.csv', ''));
+                    calls{end+1} = unique(strrep(strrep(data, '.csv,ahead', ''), '.csv,after', ''));
                   end
             catch
             end
@@ -343,18 +335,18 @@ function calls = loadCallWindowCells(user); global CALL_PATH;
     end
 end
 
-function texts = loadTextWindowCells(user); global TEXT_PATH;
+function texts = loadTextWindowNames(user); global TEXT_WINDOW_PATH;
     texts = cell(0,1);
 
     try
-        cd([TEXT_PATH '/' user '/'])
+        cd([TEXT_WINDOW_PATH '/' user '/'])
 
         for file = fileNames('*.txt')
             try
               data  = importdata(file{1});
 
               if(~isempty(data))
-                texts{end+1} = unique(strrep(data, '.csv', ''));
+                texts{end+1} = unique(strrep(strrep(data, '.csv,ahead', ''), '.csv,after', ''));
               end
             catch
             end
@@ -371,7 +363,7 @@ function data = loadWindowSignals(user, windows); global SIGNAL_PATH;
 
     try
         cd([SIGNAL_PATH '/' user '/dyn_in/']);
-
+        
         for file = fileNames('*.mat')
 
             window_name  = regexp(file{1},'win_\d+', 'match');
@@ -388,6 +380,76 @@ function data = loadWindowSignals(user, windows); global SIGNAL_PATH;
                 end
             end
         end
+    catch
+        disp(['non-existent user ' user])
+    end
+
+    if ~isempty(keys) && ~isempty(vals)
+        data = containers.Map(keys,vals);
+    else
+        data = [];
+    end
+end
+
+function data = loadCallWindowSignals(user, windows); global CALL_SIGNAL_PATH;
+
+    keys = cell(0,1);
+    vals = cell(0,1);
+
+    try
+        cd([CALL_SIGNAL_PATH '/' user '/dyn_in/']);
+        
+        for file = fileNames('*.mat')
+
+            window_name  = regexp(file{1},'win_\d+', 'match');
+            window_name  = window_name{1};
+
+            if ismember(window_name, windows) && ~ismember(window_name, keys)
+                try
+                    window_datum = load(file{1});
+                    window_datum = window_datum.u{1};
+
+                    keys{end + 1} = window_name;
+                    vals{end + 1} = sum(window_datum);
+                catch
+                end
+            end
+        end               
+    catch
+        disp(['non-existent user ' user])
+    end
+
+    if ~isempty(keys) && ~isempty(vals)
+        data = containers.Map(keys,vals);
+    else
+        data = [];
+    end
+end
+
+function data = loadTextWindowSignals(user, windows); global TEXT_SIGNAL_PATH;
+
+    keys = cell(0,1);
+    vals = cell(0,1);
+
+    try
+        cd([TEXT_SIGNAL_PATH '/' user '/dyn_in/']);
+        
+        for file = fileNames('*.mat')
+
+            window_name  = regexp(file{1},'win_\d+', 'match');
+            window_name  = window_name{1};
+
+            if ismember(window_name, windows) && ~ismember(window_name, keys)
+                try
+                    window_datum = load(file{1});
+                    window_datum = window_datum.u{1};
+
+                    keys{end + 1} = window_name;
+                    vals{end + 1} = sum(window_datum);
+                catch
+                end
+            end
+        end        
     catch
         disp(['non-existent user ' user])
     end
@@ -451,11 +513,13 @@ function file_names = fileNames(pattern)
     file_names = {file_infos.name};
 end
 
-function globals(); global SIAS CALL_PATH TEXT_PATH SIGNAL_PATH;
+function globals(); global SIAS CALL_WINDOW_PATH TEXT_WINDOW_PATH SIGNAL_PATH CALL_SIGNAL_PATH TEXT_SIGNAL_PATH;
 
-    CALL_PATH   = 'C:/Users/mark.rucker/Desktop/mark/ubicmop2017/call_window_list/call_window_list';
-    TEXT_PATH   = 'C:/Users/mark.rucker/Desktop/mark/ubicmop2017/text_window_list/text_window_list';
-    SIGNAL_PATH = 'C:/Users/mark.rucker/Desktop/mark/ubicmop2017/lds_output';
+    CALL_WINDOW_PATH = 'C:/Users/mark.rucker/Desktop/mark/workshop/call_window_list_2min/call_window_list_2min';
+    TEXT_WINDOW_PATH = 'C:/Users/mark.rucker/Desktop/mark/workshop/text_window_list_2min/text_window_list_2min';
+    SIGNAL_PATH      = '';
+    CALL_SIGNAL_PATH = 'C:/Users/mark.rucker/Desktop/mark/workshop/lds_output_call/lds_output_call';
+    TEXT_SIGNAL_PATH = 'C:/Users/mark.rucker/Desktop/mark/workshop/lds_output_text/lds_output_text';
 
     keys = {'1000', '1001', '1002', '1003', '1004', '1005', '1047', '1048', '1078', '1079', '1080', '1081', '1082', '1083', '1084', '1085', '1086', '1087', '1088', '1089', '1090', '1091', '1092', '2003', '2004', '2005', '2006', '2007', '2008', '2009', '2011', '2012', '2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024', '2025', '2026', '2027', '2028', '2029', '2037', '2047', '2048', '2049', '2050', '2051', '2084', '2085', '2086', '2087', '2088', '2089', '2090', '2091', '2092', '2093', '2094', '2095', '2096', '2097', '2098', '2099'};
     vals = [11, 42, 37, 28, 14, 39, 19, 29, 48, 39, 50, 35, 49, 33, 39, 35, 32, 54, 55, 66, 36, 50, 39, 43, 21, 48, 27, 36, 20, 43, 23, 33, 25, 36, 17, 15, 45, 18, 29, 28, 31, 28, 21, 22, 28, 30, 25, 26, 32, 22, 20, 36, 47, 43, 48, 44, 52, 61, 68, 51, 42, 61, 42, 34, 44, 39, 36, 36, 43, 44, 50];
