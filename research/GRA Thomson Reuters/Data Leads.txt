@@ -1,0 +1,43 @@
+Legal Services Corporation
+
+Technology Initiative Grant Highlights and Impact (www.lsc.gov/grants-grantee-resources/our-grant-programs/technology-initiative-grant-program/technology)
+2017 TIG Conference (www.lsc.gov/meetings-and-events/tig-conference/2017-tig-conference-online-schedule)
+Self-Represented Litigation Network (www.srln.org/)
+
+FindLaw
+Illinoise Legal Aid Online (www.illinoislegalaid.org/)
+Law Help Interactive (lawhelpinteractive.org/)
+Turbo Court (www.turbocourt.com/)
+justfix.nyc
+LegalServer.org
+Pika CMS (pikasoftware.com/)
+Open Advocate (openadvocate.org/)
+
+Iv Ashton (2017tigconference.sched.com/speaker/ivashton)
+April Faith-Slaker ()
+Abhijeet Chavan (2017tigconference.sched.com/speaker/chavan)
+Jonathan Pyle (2017tigconference.sched.com/speaker/jpyle2)
+
+Documenting the Justice Gap 2009 (www.americanbar.org/content/dam/aba/migrated/marketresearch/PublicDocuments/JusticeGaInAmerica2009.authcheckdam.pdf)
+Civil Justice Report 2015 (www.ncsc.org/~/media/Files/PDF/Research/CivilJusticeReport-2015.ashx)
+Perceptions of Fairness (2017tigconference.sched.com/event/8ydM/perceptions-of-procedural-fairness-how-online-systems-can-build-trust-and-fairness-into-their-processes)
+
+String together cohesive multi-step strategies to achieve goals rather than isolated statistics on individual decisions
+Optimize for multiple objectives
+Discover relationship between multiple decision points and outcomes
+Stitch together existing self help resources in a meaningful way
+
+Meeting Legal Needs is a complex process that requires balancing multiple objectives (time, money, risk)
+On top of these multiple objectives every individual person who pursues legal services brings unique skills and abilities (transition probabilities, actions)
+The current SOA uses statistical analysis to determine accurate probabilities for individual decisions in order to maximize expected outcome.
+Unfortunately the SOA approach doesn't capture individuals unique abilties nor does it consider how to string together multiple decisions to meet a goal
+
+
+Increase Access
+Improve Outcomes
+Reduce Cost
+Increase Attorney Opportunities
+
+A well designed MDP should have actions with substantially different transition probabilities. It's not as important that actions are more deterministic in their transitions.
+
+A learned reward function is sufficient if the expert behavior can be recovered from it

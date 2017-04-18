@@ -1,0 +1,24 @@
+Mark:
+ 
+I put some effort towards tracking down sources of data for your research and have a few possible leads.
+ 
+First, I met with the business manager of our court case management software (CMS) and asked for access to their data.  This software manages the caseload for our courts customers throughout the country.  The data that flows through this system would be ideal for your research.  The business manager is looking into what can be used and will hopefully provide more clarity soon.
+ 
+Secondly, there are a few historical data sources I was able to find through various court organizations: 
+ 
+	The first link is a series of datasets from the Civil Justice Survey of State Courts. 
+	The second link is one of the datasets from the first link which I found of particular interest.  There are data restrictions in accessing before filling out a use agreement.  Let me know your thoughts on applying for use to this dataset.
+	The third link may not be as useful, but could provide some data for statistical comparisons across jurisdictions.  It looks like this data is available for download.
+ 
+	http://www.icpsr.umich.edu/icpsrweb/NACJD/series/71
+	http://www.icpsr.umich.edu/icpsrweb/NACJD/studies/23862
+	https://www.icpsr.umich.edu/icpsrweb/ICPSR/studies/34943
+
+Finally, I came across the below article that provides some nice statistical findings around the Landscape of Civil Litigation in State Courts.  This report was authored by the National Center for State Courts (NCSC).  I have contacts with NCSC and TR has partnered with this organization in the past.  I sent a note to the research analyst who authored the report and asked if she would provide access to their dataset.  I am least hopeful about this lead on data, but maybe we’ll get lucky.
+ 
+https://www.ncsc.org/~/media/Files/PDF/Research/CivilJusticeReport-2015.ashx
+ 
+Let me know if this is helpful.  I will let you know as soon as I hear from our CMS business manager as well.
+ 
+Thanks,
+Dan

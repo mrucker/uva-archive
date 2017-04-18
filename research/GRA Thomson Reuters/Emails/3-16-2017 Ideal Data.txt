@@ -1,12 +1,13 @@
 Hi Dan,
 
-In follow up to our last call, Prof. Gerber and I have been talking about what an  ideal data set might look like. I'm going to outline that conversation at varying levels of detail. Please engage at the level that is most helpful to you.
+In follow up to our last call, Prof. Gerber and I have been talking about what an ideal data set might look like. I'm going to outline that conversation at varying 
+levels of detail. Please engage at the level that is most helpful to you.
 
 At a very high level it seems to us that any sucessful hybrid assistance system would have to keep three 'stakeholders' in mind:
 	Self Represented Litigant
 	Attorneys
 	Court System
-	
+
 One obvious stakeholder that isn't in that list is TR. The reason for that is three fold: we didn't feel we understood TR's own interest enough, the entire project is being designed for TR's interest and, finally, we felt it might add a complication that could hinder the project at its current phase.
 
 To begin to understand the relationship between the above three actors we borrowed from the report you gave us. In that report it breaks down the SRL experience into discrete steps (see attachment).
@@ -52,10 +53,7 @@ Thanks,
 
 Mark
 
----
-Mark Rucker
-
-=====================================================================================================================================================================
+---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Thanks Mark.  This is a really good start.
  

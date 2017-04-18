@@ -1,0 +1,21 @@
+I've been reading and thinking a lot more this week about our project. At this time I'm beginning to think a successful legal assistant will need two core abilities:
+	Ability to understand what people's objectives are
+	Ability to understand how to help people achieve those objectives
+
+In terms of item one, I have ongoing research here already. I'm on a team that is using a suite of algorithms called IRL to group people according to goals. As we talked about last week, if we had access to a sequential data set of people's actions we could do a lot of interesting work here with my current algorithms.
+
+Without a data set, I can also continue to make progress with item one in a more theoretical sense that could be of interest to you. Perhaps most directly applicable would be research into understanding human behavior that isn't entirely logical. I can imagine that many people seeking legal help and considering SRL don't know what they want. This means their behavior likely isn't super clear or consistent.
+
+Item two I also think is something we can work on in a way that would be beneficial to you with or without a data set. I can imagine many testable hypothesis about how a person might interact with our agent and what our agent needs to know and do to be most helpful.
+
+Either way my thought is that by focusing on only one of the above components we have the best chance of reaching testable and usable outcomes. My personal preference would be focusing on item one. I think I can offer the most there. However, both are within my range of interests and abilities. What do you think?
+
+Thanks
+
+Mark
+
+(Also, in my mind, the original four items I think fit within those items above)
+	Process Insights (aka objectives and goals and how to achieve them)
+	Smart Reminders (aka one way to assist people)
+	Smart Recommendations (aka one way to assist people)
+	Attorney-Litigant Matching (aka objectives and goals and how to achieve them)
