@@ -1,0 +1,143 @@
+\documentclass[11pt,article,oneside]{memoir}
+
+%%%------------------------------------------------------------------------
+%%% Includes
+%%%------------------------------------------------------------------------
+
+\usepackage{url}
+\usepackage{fontspec}
+\usepackage{fontawesome}
+\usepackage[svgnames]{xcolor}
+\usepackage[colorlinks=true, urlcolor=DarkSlateBlue, citecolor=DarkSlateBlue, filecolor=DarkSlateBlue, plainpages=false, pdfpagelabels, bookmarksnumbered]{hyperref}
+
+%%%------------------------------------------------------------------------
+%%% Metadata
+%%%------------------------------------------------------------------------
+
+\def\myname{Mark Rucker}
+\def\mytitle{Vitae}
+\def\myaffiliation{University of Virginia}
+\def\myaddress{Systems and Information Engineering}
+\def\myemail{mr2an@virginia.edu}
+\def\myweb{markrucker.net}
+\def\myphone{(479) 434-0164}
+\def\mylinkedin{linkedin.com/in/ruckermark}
+\def\mygithub{github.com/mrucker}
+\def\myaffiliation{University of Virginia}
+\def\mykeywords{Mark, Rucker, Mark Rucker, Vita, CV, Resume, Systems}
+
+%%%------------------------------------------------------------------------
+%%% Document
+%%%------------------------------------------------------------------------
+\begin{document}
+
+	%%%------------------------------------------------------------------------
+	%%% Fonts
+	%%%------------------------------------------------------------------------
+	\setmainfont[Path ={./fonts/}, Mapping={tex-text}, Ligatures={Common}, Numbers={OldStyle}, BoldFont={CrimsonText-Bold.ttf}, ItalicFont={CrimsonText-Italic.ttf}, BoldItalicFont={CrimsonText-BoldItalic.ttf}]{CrimsonText-Roman.ttf}
+	\setsansfont[Path ={./fonts/}, Mapping={tex-text}, Ligatures={Common}, Colour=AA0000     , BoldFont={Lato-Bold.ttf}       , ItalicFont={Lato-Italic.ttf}       , BoldItalicFont={Lato-BoldItalic.ttf}]{Lato-Regular.ttf}	
+	\setmonofont[Path ={./fonts/}, Mapping=tex-text,Scale=0.72]{texgyrecursor-regular.otf}
+	\newfontface\scheader[Path ={./fonts/}, SmallCapsFont={LinLibertine_R.otf},SmallCapsFeatures={Letters=SmallCaps}]{LinLibertine_R.otf}
+
+	%%%------------------------------------------------------------------------
+	%%% Local commands
+	%%%------------------------------------------------------------------------
+	\newenvironment{cvsection}[1]
+	{
+	 \hspace{-1.2in} 
+	 \begin{minipage}[b]{.8in}
+			\flushright \textsf{\footnotesize #1}
+	 \end{minipage}
+	 \hspace{.1in}
+	 \begin{minipage}[t]{\textwidth}
+	}
+	{
+	 \end{minipage}
+ 	 \medskip
+	}
+
+	\def\ind{\hangindent=1cm\hangafter=1 \par \noindent }
+
+	%%%------------------------------------------------------------------------
+	%%% Address & Contact
+	%%%------------------------------------------------------------------------
+	\begin{minipage}[t]{2.95in}
+	 \flushright  \footnotesize
+	 {\href{http://web.sys.virginia.edu}{Department of Systems}} \\
+	 {151 Engineer's Way} \\
+	 {P.O. Box 400747} \\
+	 {Charlottesville, VA 22904}
+	\end{minipage}
+	\hfill
+	\begin{minipage}[t]{1.3in}
+	  \flushright \footnotesize
+	  {\myphone \, \faPhone } \\
+	  {\scriptsize \texttt{\href{mailto:\myemail}{\myemail}} \, \faEnvelope } \\
+	  {\scriptsize \texttt{\href{\myweb}{\myweb}} \, \faGlobe } \\
+	  {\scriptsize \texttt{\href{\mygithub}{\mygithub}} \, \faGithub }  \\
+	\end{minipage}
+	\medskip
+
+	%%%------------------------------------------------------------------------
+	%%% Name
+	%%%------------------------------------------------------------------------
+	\noindent{\LARGE\scheader \textsc{\myname}}
+	\bigskip
+
+	%%%------------------------------------------------------------------------
+	%%% Body
+	%%%------------------------------------------------------------------------
+	\begin{cvsection}{education}
+		\ind M.S., Systems \& Information Engineering, University of Virginia, 2018, 3.9/4.0
+		\ind B.S., Computer Science and Ministry, Harding University, 2008, 4.0/4.0
+	\end{cvsection}
+
+	\begin{cvsection}{research}		
+		\ind Predictive Technology Lab, Graduate Research Assistant, 2017
+		\ind Hobby Project, Graduate Research Assistant, 2016
+	\end{cvsection}
+	
+	\begin{cvsection}{experience}
+		\ind Lead Software Architect, Cost \& Compliance Associates, 2015-2017
+		\ind Senior Software Engineer, ATLAS Technology Group, 2013-2015
+		\ind Software Engineer, Oracle (acquired Element Fusion), 2011-2013
+		\ind Capacity Study Coordinator, Regional Food Bank of Oklahoma, 2010-2011
+		\ind Systems Analyst, ArcBest Technologies, 2008-2010
+	\end{cvsection}
+	
+	\begin{cvsection}{organizations}
+		\ind Association for Computing Machinery
+		\ind AmeriCorps Alums
+	\end{cvsection}
+	
+	\begin{cvsection}{honors}
+		\ind Honors College Graduate with Distinction
+		\ind Outstanding Senior Computer Science Student
+		\ind Outstanding Computer Science Capstone Project
+		\ind $6^{th}$ at ACM Regional Programming Contest
+		\ind $1^{st}$ at CCSC-MS Regional Programming Contest
+		\ind $1^{st}$ at Acxiom State Programming Contest
+		\ind Outstanding First-Year Computer Science Student
+	\end{cvsection}
+
+	\begin{cvsection}{service}
+		\ind Red River Community Corps Board Member
+		\ind University of Oklahoma OK Coders Instructor
+		\ind Oklahoma City Spring Beta Conference Organizer
+		\ind One Year of AmeriCorps VISTA Service
+		\ind President of Harding In Action (student service organization)
+	\end{cvsection}
+
+	%%%************************************************************************
+	%%% OTHER ITEMS TO PUT INTO PROPOSAL
+	%%%************************************************************************
+	
+	\begin{comment}
+	Paper published with Yu and Jackey
+	Paper published with Kamwoo
+	Poster session with for Autonomous Agent at CVDI Spring 2017
+	Session chair for SIEDS Spring 2017
+	UVA DSI Presidential Fellowship award
+	\end{comment}
+
+\end{document}
