@@ -1,0 +1,53 @@
+System Identification -- the same thing as model learning in RL but for adaptive control (barto and sutton 191)
+
+Martingale Process -- a sequence of random variables whose expected value at time n+1 = E(Xn) given the full history of X. That is, complete knowledge of the history doesn't provide any change in expectation. This is different from independence though, as Expectation may stay the same even if the probability of potential values changes.
+For example, given a random variable X which can take values {1, 2, 3} the pmf of {.5, 0, .5} and {0, 1, 0} (respectively) have a E[X] = 2.
+
+Levy Process -- a sequence of random variables whose distributions are independent and stationary.
+
+Math
+	> Quantity
+		> Number theory
+	> Structure
+	> Space
+		>
+	> Change
+	
+Likelihood
+	
+Random Process, Stochastic Process -- though it isn't technically required, often used when referring to a set of random variables indexed by integers or the real number line. For example X1, X2, X3.
+
+Random Field -- often used when referring to a set whose random variables are indexed by a Cartesian plane (2 dimensions) or a Euclidian space (3 dimensions)
+
+Hidden Markov Model -- 
+
+Markov Jump Model
+
+Factor Analysis
+
+Graphical Models
+
+Discriminant Model -- A model that learns just posteriori probabilities so that given some pre-condition outcomes can be predicted
+
+Generative Model -- A model that learns both priori and posteriori distributions so that "realistic" new data sets can be generated from the model
+
+Multidimensional Scaling (MDS) -- a dimensionality reduction technique that seeks to preseve high dimensional euclidean distances in low dimensional space as well as possible.///
+
+Exponential Random Graph
+
+Computational Sociology
+	> Microsimulation and Macrosimulation
+	> Cellular automata and Agent-based modeling
+	> Data mining and Social Network Analysis
+	
+Computer Simulation
+
+Mathematical Modelling
+
+Natural Language
+
+Complex Adaptive System -- an ABM where agents are able to "adapt" (aka, learn)
+
+Time Invariant
+
+Stationarity
