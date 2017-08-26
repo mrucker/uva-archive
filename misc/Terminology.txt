@@ -51,3 +51,5 @@ Complex Adaptive System -- an ABM where agents are able to "adapt" (aka, learn)
 Time Invariant
 
 Stationarity
+
+Min-Max algorithms -- Make the worst case as good as possible. That is in the case of a maximation game we are making the least possible gain as big as possible.
