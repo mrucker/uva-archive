@@ -1,11 +1,11 @@
 [submodule "research/abm-via-irl"]
-	path = research/abm-via-irl
+	path = projects/abm-via-irl
 	url = https://github.com/mrucker/abm-via-irl
 [submodule "research/irl-via-xss"]
-	path = research/irl-via-xss
+	path = projects/irl-via-xss
 	url = https://github.com/mrucker/irl-via-xss
 [submodule "research/ethically-paternal"]
-	path = research/ethically-paternal
+	path = projects/ethically-paternal
 	url = https://github.com/mrucker/ethically-paternal
 [submodule "coursework"]
 	path = coursework
