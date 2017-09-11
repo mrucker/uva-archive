@@ -1,6 +1,3 @@
-[submodule "courses"]
-	path = courses
-	url = https://github.com/mrucker/courses.git
 [submodule "research/abm-via-irl"]
 	path = research/abm-via-irl
 	url = https://github.com/mrucker/abm-via-irl
