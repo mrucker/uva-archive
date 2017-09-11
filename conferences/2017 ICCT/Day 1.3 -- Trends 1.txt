@@ -1,0 +1,36 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Towards Driver State Assessment for Cooperative Driver Integration in Automated Driving
+Applied Neurocognitive Psychology Lab, University of Oldenburg, Germany
+Jochem Rieger
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Neuroergonomics as cognitive neuroscience in realistic settings
+    > Use realistic settings for applied and basic cognitive neuroscience
+    > Theoretical concepts in cognitive psychology and underlying brain processes are multidimensional and overlapping (theory developed in lab -- map to real world?)
+    > Predicting cognitive variables of interest continuously and time resolved using multivariate data driven methods (real time)
+    > Combine neurophysiological statistical models with functional modeling (e.g. cognitive architecture) to instantiate quantitative models (hypotheses)
+
+fNIRS = Near-InfaRed-Spectroscapy
+    
+fMRI indirectly measures brain activity by measuring blood flow fNIR is functionally equivalent to the fMRI, it simply uses a different sensor.
+
+One question is, do neuroscience theories accurately predict real world cognitive functioning measured by fNIRS here. 
+    > For the n-back problem the most active part of the brain is what neuroscience theory would predict (memory attention)
+    > For lateral contol demands the neuroscience theory doesn't seem to explain measured cognitive demand (spatial attention)
+    
+Can we accurately predict brain load from previously observed and labeled tasks? This suggests spacial and memory attention can't be considered independently.
+    > in 0-back lateral control problems only a 43% prediction accuracy
+    > in 1-back lateral control problems only a 80% prediction accuracy
+    > in 2-back lateral control problems only a 85% prediction accuracy
+    > in 3-back lateral control problems only a 70% prediction accuracy
+    > in 4-back lateral control problems only a 63% prediction accuracy
+    
+How many of neuroscience theories can be considered indepenendently vs dependently ? Do we need a new model for every combination of neuroscience theories?
+    
+What could the cognitive model look like? Presenter does not a strong feeling either way.
+    > Probabilistic model?
+    > Rule based model?
+    
+Are they creating behavioral models based on their cognitive prediction? Or simply trying to predict human cognitive capabilities.
+
+A comment on the modeling question raised by the n-back task. The n-back task fits well into parametric models (we simply increase the parameter in our model). An n-back task may not fit as well into a rule based model. A rule based model may require a new rule for every "n" in the n-back task.

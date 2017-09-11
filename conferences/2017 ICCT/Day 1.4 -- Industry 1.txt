@@ -1,0 +1,127 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Paradigm Shift in Automotive User Interfaces
+e.solutions GmbH, Ulm, Germany
+Frank Uhlig
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+User Interface 
+    Haptic
+        Direct precise manipulation
+        Mental model well-defined (you push a button, you turn a knob, you slide a slider)
+        Blind operation possible (don't have to take eyes off road)
+        Haptic feedback
+        Always the same configuration (modeless)
+        Quickest operation tie
+        Combination w/ new technologies
+        Low cost
+    
+    Rotary Knob
+        Indirect manipulation (changes something else like radio volume)
+        Blind operation possible
+        Haptic feedback
+        Ergonomically better than touch for scrolling
+        Differences in scroll directions between OEMS (mental model less well-defined)
+        
+    
+    Touch Screen
+        Direct manipulation
+        Less haptic feedback
+        Blind operation difficult
+        Different modes, buttons are not always in the same place
+    
+    Speech
+        Good for complex tasks, questions
+        Bad for simple tasks like turning the volume up (takes too long)
+        
+    Gestures
+        No killer use case for gestures
+        Direct feedback difficult since no clear interface (speech has language, everything else has physical touch, does the car gesture back???)
+        
+    Eyetracking
+        Attention and fatigue detection
+        Measure cognitive load through pupil diameter
+
+HMI Ergonomics
+    Colors
+        Color and contrast establish the visual hierarchy (what is most important?)
+        Color and brightness contrast for better distinctness (colorblindness)
+        Spatial depth established by brightness (dark colors are "in the back" bright colors "in the front")
+        Cultural differences and color semantics need to be taken into account
+        The larger the area, the less saturation
+        Blue light leads to poorer readability at night (short wavelengths leads to flickering at night)
+    
+    Fonts
+        Humanistic fonts (e.g. Frutiger) have up to 16% better readability than geometric constructed fonts (e.g. Eurostile)
+        Minimum font sizes (according to law) between 3.5 mm and 4.5 mm (36% better readability from 3.5 - 4.5)
+        Positive contrast more readable, less fatigue (e.g., black font on white background)
+    
+    Touchareas
+        Touch operation while driving requires a high level of attention
+        >=20 mm^2 touch areas recommended
+        
+    Driver Distraction
+        AAM/NHTSA guidelines for driver distractions must be fulfilled
+        Max 2 seconds time (colloquially called a chunk) for one operation (not looking at the street)
+        Display instruments should be over a viewing angle of 30 degress
+        Animations, transitions and moving visualizations forbidden
+
+Autonomous Driving
+    Levels of Automation
+        Level 0 manual driving
+        Level 1 assisted driving 
+        Level 2 partial automation (Tesla)
+        Level 3 conditional automation - Predefined takeover time (e.g., driver should be ready to step in after a 10 second warning time)
+        Level 4 high automation - Predefined use cases (e.g., driving on auto-bahn)
+        Level 5 full automation
+        Irony of automation -- moving from one level to another causes reduction in driving skill. That is, each level requires unique skills to be successful.
+    
+    Handover Times & Mode Confusion
+        Multimodal feedback important
+        
+    Driver Distraction vs. Driver Attention
+        Creating interfaces that require constant glancing increase driver readiness to take over driving
+        
+    Trusted Interactions
+        Building trust through traceability, predictability and reliability
+        Current studies show an acceptance of autonomous vehicles (Lvl 3) after 30-60 minutes
+        Multimodal interactions build trust (viewed as a social actor)
+        How can you regain trust after losing it? (e.g., Accident)
+        Social dialogue between car and passenger is important ("Why did the car drive through the pothole? - again." How can I interact with the car about this)
+        
+Trends
+    Exterior Design
+        All-electric powertrains will change the shape of cars
+        Shared economy - Pool Cars
+    
+    Interior Design
+        Driving will no longer be the main task
+        The car as a living space next to home and office
+        Shared economy - Pool Cars
+        Safety is a big limitation on interior design (e.g., glass looks nice and feels good but is bad in a crash)
+        
+    Sensors
+        Interior surveillance (is the driver sleeping, what is the safest way to crash given passenger orientation, etc.)
+        Monitor the vital signs of passengers
+        Identifcation and personalization (shared car)
+        Determine mental condition and stress levels (workload management)
+        
+    Speech Assistant
+        holy grail for in car interaction
+        central intelligent agent across all life modes (manage home temperature and as well as work appointments)
+    
+    Responsive Design
+        Modern car can have up to 6 screens all various sizes and resolutions.
+        Touchpoints for car system on outside of vehicles
+    
+    3D Displays
+        Two displays on top of eachother. The back one maybe 2 or 3 inches off the front.
+        
+    Augmented Reality Head Up Display (AR HUD)
+        Must be very bright to contrast natural daylight
+        
+    Personalization
+    
+    Mobile Touchpoints
+        Vehicle is just another component of the digital ecosystem
+        Seamless transition of the brand/user experience when enterig or leaving car
+        Access vehicle services outside of the car

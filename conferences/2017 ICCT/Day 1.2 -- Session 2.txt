@@ -1,0 +1,41 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Accelerating Manual Annotation of Filled Pauses by Automatic Pre-Selection
+O. Egorow, A. Lotz, I. Siegert, R. Böck, J. Krüger, A. Wendemuth
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    Used standard feature set called Open Smile
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Inferring User’s Search Activity Using Interaction Logs and Gaze Data
+J. Schwerdt, M. Kotzyba, A. Nuernberger
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    Considers two search paradigms: fact finding and knowledge exploration
+    Used HMM's to understand impact of feature sequence on search interaction
+    Primarily an argument for models and features
+    How important is the sequence to findings? Can you shuffle sequences and get same results?
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Multimodal Fusion including Camera Photoplethysmography for Pain Recognition
+V. Kessler, P. Thiam, M. Amirian, F. Schwenker
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    Introduction
+        Using a photo of a face withdraw various facial features to measure stress, emotion and pain        
+        if we think of this work in terms of signals we have the following hierarchy of common signals
+                Signals
+                  > Biosignals
+                    > ECG       -- heart-rate
+                    > RSP       -- respiration
+                  > Video
+                    > rPPG      -- an analysis of variations in average skin color from frame to frame (can measure things like heart rate, blood volume, respiration)
+                    > Geometry  -- includes things like rate of change in eye shape or mouth shape.
+                    
+    Research
+        Fuses above four signals with a Random Forest to predict emotion
+        Used the SenseEmotion Database to train/test classification algorithm
+        SenseEmotion applies levels of heat pain to participants and records their reactions
+        Examined the result of the classifier over different sampling frequences
+    
+    rPPG
+        
