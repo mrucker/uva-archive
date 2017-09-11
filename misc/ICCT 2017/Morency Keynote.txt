@@ -1,0 +1,51 @@
+Virtual Human Creation Recommendations
+    > Wizard of Oz experiments
+    > Decrease Affect (aka, mirroring mood/feeling)
+
+Multimodal Communication
+    > Verbal    (words)
+    > Vocal     (tone)
+    > Visual    (gestures)
+    
+OpenFace (open source facial recognition, only open source platform)
+    > Facial landmark detector
+    > Facial emotion detector
+    > No Deep-learning (v1.0)
+    > Deep-learning (v2.0)
+
+Multimodal Data Challenges
+    Verbal  -> discrete
+    Vocal   -> high sampling rate
+    Visual  -> high dimmensional
+    
+"Once we pick all the low-hanging fruit with bottom-up we're going to need to come back around and find both bottom-up and top-down will be needed"
+    --Louise-Phillip Morency
+    
+Multimodal Machine Learning: A Survey and Taxonomy (Baltrustaitis, Ahuja, Morency 2017)
+
+    + Representation -- how do we store this data?
+        > Joint representation (single multimodal space) -- Bimodal Deep Belief Network (Ng 2011)
+        > Coordinated representation (each modal gets its own space) -- Coordination Analysis between spaces (Deep CCA)
+    
+    + Alignment -- how do we determine which words go with which facial expressions? Or which actions are the same between people
+        > Explicit Alignment -- Dynamic Timewarping
+        > Implicit Alignment -- Caption Assignment to Image
+        
+    + Fusion -- closer to the output (vs. representation which is closer to input)
+        > Model-agnostic approaches
+            - early fusion
+            - late fusion
+        > Model-based approach
+            - deep neural networks
+            - kernal-based methods
+            - graphical models
+    
+    + Translation -- changing data from one modality to another. Evaluation of translation can be open-ended/subjective.
+        > Example-based (aka, non-parametric, KNN)
+        > Model-driven (aka, parametric, LDA)
+        
+    + Co-learning -- transfer knowledge between modalities (not to fuse, just to help, think baysian updates, maybe we know lots of words but few pictures)
+        
+        
+"Attending is very popular word in multimodal research. It was required last year to get into NIPS. This year's word is Reinforcement Learning."
+    --Louise-Phillip Morency

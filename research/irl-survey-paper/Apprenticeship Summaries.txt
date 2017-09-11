@@ -1,0 +1,14 @@
+(2004 Abbeel)       Projection Algorithm. Maximum margin. Doesn't make a claim to the "true reward". Simply finds the reward that is most similar to behavior. Model-based. Optimality required.
+(2006 Ratliff)      Same as Abbeel but finds the reward that creates most similar behavior over distribution of trajectories. Model-based. Optimality not required.
+(2009 Coates)       One of several papers on the autonomous helicopter controller. Uses Projection Algorithm and a "learned" model.
+(2011 Babes-Vroman) Learns a reward function for each trajectory then Clusters by reward weights. With these reward weights it then "mixes" previously observed reward functions to match a single sample trajectory. Compares many different IRL algorithms.
+(2011 Mori)         based on IOC. Implicitly "Learn" a model from the expert and the learner. Have the learner optimize the reward function on their own model.
+(2012 Choi)         Uses a Dirichlet process mixture model to create a non-parametric prior distribution over possible reward functions. New rewards are learned from the DPM prior. Heavily related to  (2011 Babes-Vroman).
+(2013 Boularias)    Proposes a loss function that doesn't rely on feature expectations. The argument is that this doesn't require as many sample trajectories to accurately predict feature expectation. Also proposes a transformation on the state space to reduce complexity whilre preserving dynamics.
+(2009 Ratliff)      Very much an IRL paper and probably deserves to be in the Apprenticeship Learning folder. Extends Ratliff's MMP algorithm to nonlinear calculations through feature engineering. Also provides many insightful and intuitive interpretations of the MMP algorithm. [Also claims IOC has a linear systems model while IRL has an MDP model]
+
+(2008 Coates)  Doesn't go through reward space at all. Instead it uses an HMM to assume that every trajectory is an observation of the true trajectory plus some noise. Once the "ideal" trajectory is recovered from multiple examples IRL is used to create an LQR controller to induce the ideal trajectory in practice.
+(2015 Hussein) I don't think it is fundamentally an IRL based approach. It seems more a regression based approach trying to map states to the expected action. Fundamental to this approach is determining appropriate number of predictors which is the main focus of the algorithm in the paper.
+(2010 Melo)    An interesting paper. It appears to use a model (MDP) to update the MAP for taking any action a in any state x. From what I can tell it doesn't try to solve for the reward function in any way and as such sees to be a strange mix between IRL, SL approaches to LfD.
+
+Create my own hierarchy of ideas/taxonomy of the IRL/IOC/LfD space

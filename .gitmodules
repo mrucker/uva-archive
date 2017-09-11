@@ -7,3 +7,6 @@
 [submodule "research/irl-via-xss"]
 	path = research/irl-via-xss
 	url = https://github.com/mrucker/irl-via-xss
+[submodule "research/ethically-paternal"]
+	path = research/ethically-paternal
+	url = https://github.com/mrucker/ethically-paternal

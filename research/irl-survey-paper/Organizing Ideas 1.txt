@@ -1,0 +1,33 @@
+Imitation Learning
+Behavior Cloning
+Inverse Reinforcement Learning
+Inverse Optimal Control
+Learning from Demonstration (LfD)   -- An area of research primarily concerned with robots learning from human demonstrations how to carry out motor skills
+Apprenticeshp Learning              -- An area of research that formalizes tasks as MDP's and then tries to learn a reward function that induces behavior similar to observed behavior
+
+> Applications
+    - Map Matching
+    - Cultural Preferences
+    - Air Traffic Control
+    - Autonomous Flight
+    - Dialogue Management
+    - Depression Diagnosis
+
+> Goals
+    - Imitate
+    - Predict
+    - Intervene
+    - Classify
+    - Collaborate
+
+> Methods
+    Sub-Gradient Descent        -- (Simultaneous IRL)
+    Linear Optimality           -- (Abbeel and Ng 200)
+    Maximum Feature Margin      -- (Projection and MMP)
+    Maximum Likelihood          -- (Max Ent)
+    Maximum A Posteriori        -- (Bayesian IRL)
+
+Distribution over Reward Functions
+Distribution over Reward States
+Distribution over Policies
+Distribution over Actions
