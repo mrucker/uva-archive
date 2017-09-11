@@ -1,0 +1,109 @@
+Session 1: Strategy, Cognition, Models
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Neurobiological Fundamentals of Strategy Change – A Core Competence of a Companion System
+A. Schulz, M. Woldeit, M. Brosch, F. Ohl
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    Parallel Expert Network (similar to picking between differnt policies)
+        > Theory behind how the brain learns new behavior
+        > Only one expert network can be active at a time
+    
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Preliminary Classification of Cognitive Load States in a Human Machine Interaction Scenario
+A. Oschlies-Strobel, S. Gruss, L. Jerg-Bretzke, S. Walter, D. Hazer-Rau
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    Introduction
+        Quantitative Workload -- too much
+        Qualitative Workload -- too hard
+
+        Workload can't be measured directly so we measure stress as a correlated measure
+
+        A Survey of Affective Computing for Stress Detection (Greene 2016)
+
+    Data
+        UUlmMACdatabase 
+            > 60 participants
+            > 45 minute sessions
+            > multiple episodes in each session of sequences that try to create certain workload (too much, too little, hard, easy, etc.)
+            > many measurements directly from the body (biopotential sensors. E.g., respiration, muscle activation, heart rate, temperature)
+            > video recording from multiple angles
+            > audio recording
+            
+        Another reference to the "Wizard of Oz" experiment setup. What is this? It seems important to this field.
+
+        Valance, Arousal, Dominance dimensions used to measure affect (I think dominance is a measure of emotional control)
+        
+        Not yet publicly available but perhaps releasing to general public in the next year
+
+    Analysis
+        Trained a classifier using KNN, LDA and Random Forest -- validated using 10-fold and Leave one out
+
+    Future Work
+        How generalizable are these classifiers? Can they work in situ (out of the lab)?
+        Which biopotential sensors are most helpful for classifying workload?
+        
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Pupil-Assisted Target Selection (PATS): State of the Art and Future Prospects
+C. Strauch, J. Ehlers, A. Huckauf
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    Introduction
+        Gaze  -- provides a lot of information about attention
+        Pupil -- pupil size can tell a lot about underlying cognitive functions
+    
+    Research Questions
+        > how to measure pupil information?
+        > how reliable is pupil information?
+        > can a person actively control pupil size (can I intentionally change my pupil size?)
+        
+    Stimulus driven pupil-based selection
+        > by making visual interfaces lighter and darker we can tell where somebody is looking based on their pupil size
+        > on interfaces with multiple light and dark features the gaze will stay fixed while the pupil size will change with attendance
+        
+    Bio-feedback design
+        > first established baseline mean and standard deviation for each participant's pupil size
+        > with feedback participants can learn to change size of pupil outside of standard deviation
+        
+    Target Selection
+        > selecting a visual target by actively increasing pupil size is slow. Intentional pupil size change takes several seconds.
+        > traditional target selection by gaze alone is a little faster though more error prone.
+        > pupil selection allows eyes to wander without worrying about sending incorrect intent.
+        
+    Summary
+                        |   pro       |  con 
+        ================|=============|========
+        Stimulus-driven |   reliable  |  slow
+        Active          |             |  slow
+        Automatic       |   fast      |  small
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Requirements for a Companion System to Support Identifying Irrelevancy (Position Paper)
+M. Siebers, K. Göbel, C. Niessen, U. Schmid
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    Introduction
+        Assist the user in temporally ignoring and permanent deletion of irrelevant digital objects
+        Current research is focused on computer files in an administration setting and digital measurements in an industrial setting
+        Relevancy can depend on domain, task, user
+    
+    Proposed Solution
+        Irrelevancy probability (decision under uncertainty)
+        Gain/maintain user trust (deleting is scary)
+        Different actions per user (e.g., some users want assistant to have full autonomy, some users want a system to make suggestions to them)
+    
+    Conclusion
+        Dare2Del as general framework
+        Lots of work in NLP and tutoring for how to generate explanations from rules
+    
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Embedding of the Personalized Sentiment Engine PERSEUS in an Artificial Companion (Position Paper)
+S. Guo, C. Schommer
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    PERSEUS -- an open source framework for sentiment analysis
+        > underlying algorithm is a 3 layer recurrent neural network
+        > works on cross-document sentiment analysis (vs within document sentiment analsysis)
+        
+    Can we measure and determine a relationship between sentiment and emotion? Map sentiment onto the arousal-valence space?
