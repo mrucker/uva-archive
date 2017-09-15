@@ -1,0 +1,25 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Context is King
+Axel Platz
+User Interface Design, Siemens AG Corporate Research, Munich, Germany
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    Introduction
+        How do we make this new technology "usable"? Consider the car that surrounds the combustion engine.
+        
+        Controlled (extrensic) <-------------------------------------------------------------> (intrinsic) Autonomous
+        
+        Innovation can occur on two axis
+            > Better Meaning (Nintendo)
+            > Better Technology (Playstation)
+        
+        Reversal Theory
+        
+        What is Beautiful is Usable
+        What is Usable is Beautiful
+        
+        Companion technology should emotionally reflect the task at hand rather than my own mood
+        
+        General Information -> Specific Information -> Advisory Guidance -> Opt-in Automation -> Overrideable Automation -> Nonoptional Automation
+        
+        Text center of the brain can only work sequentially because that is how words work. We can create abstraction while creating a bottleneck in processing.

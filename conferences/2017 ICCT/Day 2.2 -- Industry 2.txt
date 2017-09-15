@@ -1,0 +1,39 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Adaptive User Interfaces: From Vehicle Components to Transport Networks
+Stas Krupenia
+Styling and Vehicle Ergonomics, Scania AB, Södertälje, Sweden
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    Introduction
+        We design for when the driver needs to understand something about the vehicle and take the correct action
+        
+    Why Automate?
+        Alleviating Congestion
+            Vehicles only use about 5% of road way (consider width of lane combined with forward/backward distance between vehicles)
+            Reduce stop and go disturbances
+        Reduce energy & Emissions
+            Close-formation platoons
+            Reduce accelerate/decelerate cycles
+        Improve Safety
+            94% of US crashes caused by driver
+    
+    Three levels of Driver/Vehicle Control
+        Operational -- turning car on, signalling, cruise control
+        Tactical    -- navigating intersections
+        Strategic   -- defensive driving, speed on road, path selection
+        
+    Current Workflow
+        Planning -> User Needs -> Concept Development -> Prototype Development -> Validation
+        Do we need a new workflow for autonomous vehicle creation and design
+    
+    What mental models do we need to create and support human functioning in a driving system?
+    
+    How to handle authority transitions from human driver to autonomous driver? Research seems to suggest it takes humans 40 seconds to fully mentally engage in driving.
+        How can we handle the pass off so that human can take some control immediately with assistance until 40 seconds switch.
+        
+    Lots of coordinated information on shown on distributed displays. Is there a coordination hub or do they all work independently?
+    
+    Next level of autonomous driving is developing system understanding of the human state rather than just understanding environment/road state
+        What are the critical driver states that need to be identified for each HMI phase?
+    
+    

@@ -1,0 +1,31 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Trends in Applications of Companion Technology to Space Exploration
+Adrian Stoica
+NASA Jet Propulsion Laboratory and California Institute of Technology, Pasadena, CA, USA
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    Introduction
+        Current top priority is water planet exploration (could we build a mars rover for Europa?)
+        Two ideas for robots in space exploration
+            Robot only (e.g., mars rover)
+            Robot companions (maybe separate, maybe an exo-skeloton because current space suits are difficult to move in).
+        Solar power per square meter decreases by the square of the distance from the sun. Important consideration for solar powered robots.
+        Robot navigation is very challenging in zero-gravity environments. How do you train a robot to move in both zero-gravity and gravity environments?
+        
+    Communication
+        H -> IM (Intelligent Machine) 
+        IM -> H
+        
+        Intentional, direct
+            Spoken Words
+            Body Gestures
+            Biosuit/Biosleeve
+            Written Words
+            EEG (this technique can actually be improved futher with EEG from two users)
+            
+        Subliminal, indirect
+            Biometrics, who is the person
+            Activity recognition
+            Activity prediction/planning
+            
+        Trust

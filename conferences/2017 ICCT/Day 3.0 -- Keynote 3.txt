@@ -1,0 +1,55 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Prosodic Entrainment and Social Impact
+Julia Hirschberg
+Spoken Language Processing Group, Columbia University, NY, USA
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Introduction
+    Prosidy -- pitch and phrase accents (e.g., raising pitch in english in order to ask a question)
+    Entrainment -- "The Chameleon Effect". Non-conscious mimicry of the postures, mannerisms, facial expressions, and other behaviors
+    Perception-behavior link -- Underlying cause
+    Entrainment can happen and has been shown across lots of different behaviors
+
+Subjects Who Entrain
+    Perceived as more socially attractive
+    Perceived as more competent
+    Perceives conversation as more intimate
+    
+Computational Linguistics
+    Read speech is very different from spontaneous speech (for this reason spontaneous speech is needed for research)
+    "Given New" in a conversation is the study of when does introduced information become a "given" instead of "new"
+    
+Units of Analysis
+    Inter-Pausal Unit (IPU): pause-free segment of speech > 50ms
+    Turn: Sequence of speech from one speek without intervening speech from the other speaker
+    Session: Complete interaction between two sujects on one task
+    
+Features With Units of Analysis
+    Intensity mean
+    Intensity max
+    Intensity min
+    Speaking rate
+    
+Forms of Entrainment
+    Proximity -- significant similarity of partner features
+    Convergence -- partner features become more similar over the course of a unit of analysis
+    Synchrony -- positive correlation between partners
+    
+Ground Truth
+    Partner Similarity     = How do I talk relative to my partner
+    Non-Partner Similarity = How do I talk relative to people I didn't interact with
+    Self Similarity        = How do I talk normally (monologue)
+    
+Experiment Of Collaborative Games
+    They were able to find entrainment locally and globally within their games (in English and Mandarin)
+    Among experiment participants, participants who showed high levels of entrainment scored higher
+    Brought in outside people (mechanical turk) and asked them a set of sujective questions about the game interactions
+    
+Computation Linguistics Measure of Prosodic Similarity
+    Perplexity of language models
+    Levenshtein Distance
+    KL Divergence
+    
+Experiment With Entraining Avatars
+    People trusted the speaking avatars which entrained
+    People thought the non-entraining speaking avatar was strange

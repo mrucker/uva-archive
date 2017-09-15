@@ -1,0 +1,53 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Challenges in Cognition-Based Human-Robot Collaboration
+Joachim Hertzberg
+Osnabrück University and DFKI Robotics Innovation Center, Osnabrück Branch, Germany
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    Introduction
+        By focusing on a domain we can simplify problems (e.g., industrial robot doesn't care about emotions. Digital assistant doesn't care about 3D space)
+        ISO 15066 defines collaorative robot specification and expectations
+            Defines Collaborative Workspace -- an operating space where the robot system (including the workpiece) and a human can perform tasks concurrently
+            Defines exact pressures and length of time for all kinds of contact between humans and robots (Ann. A)
+    
+    Why/When/How HRC in Industrial Manufacturing
+        Neither full automation nor purely manual work optimzes the overall process
+        Fit robot actions to the human workers as they work individually
+            big tall lefties as well as slim small righties
+            
+    Privacy
+        Using cameras, not a good idea
+        Using 3d depth sensors, ok
+        
+    Variations
+        Individual Variation (nominal, tolerate)
+            human position, trajectory, size, handedness, ...
+        "Spontaneous" Variation (non-nonimnal, tolerate)
+            sneeze, wave to colleagues, ...
+        Critical Variation (non-nominal, raise exception)
+            sequencing error, blockage in space, ...
+    
+    Variation Handling    
+        Tolerate tolerale variables (no frequent false alarms)
+        Compensate tolerable variations by robot behavior adaption
+        Handle exceptions so as to satisfice
+        
+    Is learning the solution?
+        Probably part of the solution, but..
+            ...not great for close-loop control
+            ...bulky labeled data unavailable
+            ...safety requires some degree of verifiability (proof by construction) (how do you verify a neural network?)
+    
+    Plan-based Robot Control is a better solution
+        "The plan is that part of the robot control program, which the robot reasons about explicitly" (D. McDermott, 1992)
+        Goal-directed action under uncertain/incomplete knowledge
+        Modeling & optimizing & verifying robot action
+        Compact communication of robot goals & actions on a high abstraction level (not, "well you gave me 5 tons of data and I learned it)
+        Explicit treatment of uncertainty & exception
+        Hierarchical organization (layers of meaning and definition)
+    
+    CHIMP Plan Execution Model
+        Flexible timeline representation
+        NOW pointer
+        Keep hierarchical task structure
+        Integrate plan generation & execution

@@ -1,0 +1,131 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+SLOTH – The Interactive Workout Planner
+G. Behnke, F. Nielsen, M. Schiller, P. Bercher, M. Kraus, B. Glimm, W. Minker, S. Biundo
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    Introduction
+        In order to customize planner they propose integrating using into the planner rather than having the planner know user preferences
+        Model the planning problem as causal links and high level actions. Uses decomposition methods to find simpler underlying actions.
+        
+    System Architecture    
+                                                                              |-
+        Planning Component <-> Dialog Management <-> Interaction Management <-+ 
+                                                                              |-
+    
+    Common Knowledge Model
+        Decomposition methods can be explained
+        
+    Traditional MIP-systems use a plan-present-critique cycle
+        Develop a full solution
+        Present full solution to user
+        User states how he would like to modify plan
+        Problem: presented plan can be too complex for user to critique
+    
+    Planning Algorithm
+        SLOTH performs search in the space of all plans, starting with initial plan
+            From the planner's point-of-view the user can then be seen as a "heuristic" -- something giving instructions on which plan to examin next
+        Which search algorithm?
+            BFS -- NO (appears to jump around from users perspective)
+            A*  -- NO (appears to jump around from users perspective)
+            DFS -- Yes
+        Traditional DFS would search an entire branch first
+            User heuristic can allow the DFS to jump branches
+        
+    Dialog Management
+        Uses Microsoft's LUIS (Language Understanding Intelligent Service)
+        Uses POMDP-based decision model to try to predict the user's decision
+        
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+How to Manage Affective State in Child-Robot Tutoring Interactions?
+T. Schodde, L. Hoffmann, S. Kopp
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    Introduction
+        Intelligent Tutoring System have already been used in education (e.g., Clement 2013)
+        Presence of robot along with classical on-screen tutor have been shown to be even more effective
+        Good human teachers don't only share information but also consider the child's affective states (bored, frustrated, etc.)
+        
+    Related Work
+        Other research has considered alternative affective sensors for tutoring purposes this work has shown considering affect is helpful
+        
+    Questions
+        Which affective states are important?
+        Which cues should be detected?
+        How should the cues be interpreted?
+        When and how should the robot react to affect?
+        
+    Learning Queues
+        Consulted an "expert" (elementary teacher)
+        Asked teachers to continuously think aloud while watching children and robots interact
+        Created a list of "queues" from this thinking aloud and labeled them as either engagement or disengagement
+    
+    Learning Reactions
+        This list also can from the "expert" thinking aloud
+        Grouped reactions into "preventative actions" and "repair actions"
+        
+    Interaction Management
+        Trained a naive bayesian classifier to map reactions to observed queues
+    
+    Observing Queues
+        Used Kinect to observe and intpret queues (Kinect already had the ability to recognize the queues they selected above)
+        
+    Conclusion    
+        Current status of research is ongoing validation
+        By and large "experts" agree on cueues and reactions
+        Many queues can be monitored and interpreted with non-invasive sensors (e.g., visual and audio only)
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Help Me Make a Dinner! Challenges When Assisting Humans in Action Planning
+G. Behnke, B. Leichtmann, P. Bercher, D. Höller, V. Nitsch, M. Baumann, S. Biundo
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    Introduction
+        Situation representation for Algorithm and Human should have a common ground
+        Human planning is dynamic (uses many algorithms/heuristics)
+            Bottom-up
+            Opportunistic            
+            Non-hierarchichal
+        Human planning has limited resources
+            Time limits
+            Working memory
+            Salient experiences
+    
+    Human-Assistant Interface
+        Observability of system
+        Actionability within system
+        
+    Why not use classical preference elicitation?
+        Companion system must be responsive
+            no lengthy preparation phase
+        user's preferences are not well defined
+            small change in context can drastically alter what a user wants
+            
+    Big Problem: Oversubscription! 
+        As users put in new requirements eventually they will become contradictory
+        How does the system know which requiremets can be dropped over the course of interacting
+        
+    How do we do explanations in planning?
+        Only two or three papers on this problem
+        
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+A Paradigm for Coupling Procedural and Conceptual Knowledge in Companion Systems (Position Paper)
+M. Schiller, G. Behnke, M. Schmautz, P. Bercher, M. Kraus, W. Minker, B. Glimm, S. Biundo
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    Introduction
+        We want companion systems that operate in situations rich with knowledge
+            Domain Knowledge
+            User Knowledge
+        Non-expert planners tend to be opportunistic
+        Expert planners tend to be hierarchichal 
+        
+    Technologies
+        PANDA
+            HTN
+            POCL
+        Knowledge Representation
+            OWL
+            JFACT
+        User Interaction
+    
+    

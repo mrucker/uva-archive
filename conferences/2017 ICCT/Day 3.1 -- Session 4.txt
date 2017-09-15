@@ -1,0 +1,43 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Adaptive Dynamic Network Architectures for Companion Systems (Position Paper)
+C. Jarvers, H. Neumann
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    Introduction
+        Neuron in the brain uses a lot more information than a simple feed forward neural network
+        We need to match neural networks more to the brain in order to advance our hardware
+        A challenge with neural networks is stability. How do we learn from new examples without unlearning old examples?
+    
+    
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Dialogues with IoT Companions Enabling Human Interaction with Intelligent Service Items (Position Paper)
+K. Jokinen, S. Nishimura, K. Fukuda, T. Nishimura
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    Introduction    
+        HMI is qualitatively different with robots than screens: they are agents not tools
+        Gathering and modelling of the knowledge related to actions that underlie human activities
+        Is AI ready for social problems? Lots of position papers about how AI could be used. Fewer actual human-AI applications.
+        Complex rule based intelligence suggested. Again, it simply seems the more complex the more likely we are to miss something important.
+        AI as boundary crossing agents? Something about that phrase really resonates with me but does it mean anything? Why do I like it so much?
+        Lots of ideas seen over and over again. It feels so tempting to build things up from nothing: add complexity until you get what you want.
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Possible Applications of Companion Systems in Psychotherapy – Perspectives on a New Technology (Position Paper)
+S. Walter, A. Oschlies-Strobel, M. Hasse, H. Traue, K. Limbrecht-Ecklundt, L. Jerg-Bretzke
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+    Introduction
+        Lots of ideas under the umbrella of companion technology
+        
+    Companion Technology Characteristics
+        Emotion Recogition
+        Environment/Situation Recogition
+        Communication
+        Decision, Conclusion and Planning
+        
+    Existing Applications
+        There is no context where you couldn't create a companion technology
+        
+    How Do We Go From Assistant Technology to Companion-Technology?
+    
