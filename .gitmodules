@@ -4,9 +4,9 @@
 [submodule "research/irl-via-xss"]
 	path = projects/irl-via-xss
 	url = https://github.com/mrucker/irl-via-xss
-[submodule "research/ethically-paternal"]
-	path = projects/ethically-paternal
-	url = https://github.com/mrucker/ethically-paternal
 [submodule "coursework"]
 	path = coursework
 	url = https://github.com/mrucker/coursework.git
+[submodule "projects/ethically-paternal"]
+	path = projects/ethically-paternal
+	url = https://github.com/mrucker/ethically-paternal.git
