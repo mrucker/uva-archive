@@ -1,6 +1,3 @@
-[submodule "research/abm-via-irl"]
-	path = projects/abm-via-irl
-	url = https://github.com/mrucker/abm-via-irl
 [submodule "research/irl-via-xss"]
 	path = projects/irl-via-xss
 	url = https://github.com/mrucker/irl-via-xss
