@@ -7,6 +7,3 @@
 [submodule "projects/abm-via-irl"]
 	path = projects/abm-via-irl
 	url = https://github.com/mrucker/abm-via-irl.git
-[submodule "projects/lasso-irl"]
-	path = projects/lasso-irl
-	url = https://github.com/mrucker/lasso-irl.git
