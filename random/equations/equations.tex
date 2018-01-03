@@ -1,0 +1,23 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry} 
+\usepackage{amsmath,amsthm,amssymb,amsfonts}
+\usepackage{parskip} %separates paragraphs by a blank line rather than indenting first sentence
+\usepackage{graphicx}
+
+
+\graphicspath{ {figures/} }
+
+\begin{document}
+
+	\section{Kernel as a dot product in feature space}
+	\begin{align*}
+		X                    &= \begin{bmatrix}x_1\\x_2\end{bmatrix} Y = \begin{bmatrix}y_1\\y_2\end{bmatrix} \\ 
+		\langle X, Y \rangle &= x_1y_1 + x_2y_2\\
+		K(X,Y)               &= (\langle X, Y \rangle + 1) ^2 \\
+		                     &= 1 + 2x_1y_1 + 2x_2y_2 + (x_1y_1)^2 + (x_2y_2)^2 + 2x_1y_1x_2y_2\\
+		\phi(X)              &= \begin{bmatrix}1\ \sqrt{2}x_1\ \sqrt{2}x_2\ (x_1)^2\ (x_2)^2\ \sqrt{2}x_1x_2\end{bmatrix}^T\\
+		K(X,Y)               &= (\langle X, Y \rangle + 1) ^2 = \langle \phi(X), \phi(Y) \rangle
+	\end{align*}
+
+\end{document}

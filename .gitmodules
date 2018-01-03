@@ -7,3 +7,6 @@
 [submodule "projects/abm-via-irl"]
 	path = projects/abm-via-irl
 	url = https://github.com/mrucker/abm-via-irl.git
+[submodule "projects/irl-kernel"]
+	path = projects/irl-kernel
+	url = https://github.com/mrucker/irl-kernel
