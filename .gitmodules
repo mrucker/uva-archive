@@ -10,3 +10,6 @@
 [submodule "projects/thesis"]
 	path = projects/thesis
 	url = https://github.com/mrucker/thesis
+[submodule "projects/dsi-values"]
+	path = projects/dsi-values
+	url = https://github.com/mrucker/dsi-values.git
