@@ -1,9 +1,6 @@
 [submodule "coursework"]
 	path = coursework
 	url = https://github.com/mrucker/coursework.git
-[submodule "projects/ethically-paternal"]
-	path = projects/ethically-paternal
-	url = https://github.com/mrucker/ethically-paternal.git
 [submodule "projects/abm-via-irl"]
 	path = projects/abm-via-irl
 	url = https://github.com/mrucker/abm-via-irl.git
